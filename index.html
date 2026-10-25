@@ -1,17 +1,44 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arih Juha Suaeban — Team Lead & Senior Software Engineer</title>
-    <meta name="description" content="Arih Juha Suaeban — Team Lead & Senior Software Engineer dengan 15+ tahun pengalaman di .NET, microservices, OutSystems, dan AI-Driven Development.">
+    <meta name="description" content="Arih Juha Suaeban — Team Lead & Senior Software Engineer with 15+ years of experience in .NET, microservices, OutSystems, and AI-Driven Development.">
     <meta name="author" content="Arih Juha Suaeban">
     <meta name="theme-color" content="#0f172a">
     <meta property="og:title" content="Arih Juha Suaeban — Team Lead & Senior Software Engineer">
-    <meta property="og:description" content="15+ tahun merancang sistem enterprise dan memimpin tim engineering.">
-    <meta property="og:image" content="https://arihsuaeban.github.io/assets/arih-suaeban.jpg">
-    <meta property="og:url" content="https://arihsuaeban.github.io">
+    <meta property="og:description" content="15+ years designing enterprise systems and leading engineering teams.">
+    <meta property="og:image" content="https://arihsuaeban.github.io/assets/og-image.png">
+    <meta property="og:url" content="https://arihsuaeban.github.io/">
+    <link rel="alternate" hreflang="en" href="https://arihsuaeban.github.io/">
+    <link rel="alternate" hreflang="id" href="https://arihsuaeban.github.io/id/">
     <meta property="og:type" content="profile">
+    <link rel="canonical" href="https://arihsuaeban.github.io/">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/arih-suaeban.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Arih Juha Suaeban",
+        "jobTitle": "Team Lead & Senior Software Engineer",
+        "url": "https://arihsuaeban.github.io/",
+        "image": "https://arihsuaeban.github.io/assets/arih-suaeban.jpg",
+        "email": "mailto:arih.suaeban@gmail.com",
+        "telephone": "+62-856-910-880-22",
+        "address": { "@type": "PostalAddress", "addressLocality": "Tangerang Selatan", "addressCountry": "ID" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "UIN Syarif Hidayatullah Jakarta" },
+        "knowsLanguage": ["id", "en"],
+        "hasCredential": { "@type": "EducationalOccupationalCredential", "name": "OutSystems Associate Developer (O11)", "dateCreated": "2022-08" },
+        "sameAs": ["https://linkedin.com/in/arih-suaeban"],
+        "knowsAbout": [".NET", "C#", "Microservices", "OutSystems", "Go", "React", "SQL Server", "Azure", "System Integration", "AI-Driven Development", "Engineering Leadership"]
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -51,7 +78,7 @@
 
         .container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
-        /* ---------- Navigasi ---------- */
+        /* ---------- Navigation ---------- */
         .nav {
             position: sticky;
             top: 0;
@@ -72,6 +99,20 @@
         .nav-links { display: flex; gap: 28px; list-style: none; }
         .nav-links a { color: var(--slate-300); font-size: 15px; font-weight: 500; }
         .nav-links a:hover { color: #fff; }
+
+        .nav-right { display: flex; align-items: center; gap: 28px; }
+        .lang-switch {
+            display: flex;
+            border: 1px solid rgba(255, 255, 255, .2);
+            border-radius: 999px;
+            padding: 3px;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1;
+        }
+        .lang-switch a, .lang-switch span { padding: 6px 12px; border-radius: 999px; color: var(--slate-300); }
+        .lang-switch a:hover { color: #fff; }
+        .lang-switch span[aria-current] { background: var(--ocean); color: #fff; }
 
         /* ---------- Hero ---------- */
         .hero {
@@ -231,6 +272,9 @@
             border-radius: 8px;
             padding: 4px 12px;
         }
+        .skill-core { grid-column: 1 / -1; border-top: 4px solid var(--ocean); }
+        .tags.primary li { background: var(--ocean); border-color: var(--ocean); color: #fff; font-weight: 600; }
+        .tags.muted li { background: #fff; color: var(--slate-500); }
 
         /* Pengalaman */
         .timeline { position: relative; padding-left: 32px; }
@@ -301,6 +345,76 @@
         footer .hero-actions { justify-content: center; }
         footer small { display: block; margin-top: 32px; color: var(--slate-500); font-size: 14px; }
 
+        /* ---------- Tambahan: badge, kepemimpinan, proyek ---------- */
+        .stats { grid-template-columns: repeat(4, 1fr); }
+        .stat strong { font-size: 26px; }
+        .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+        .badges .eyebrow { margin-bottom: 0; }
+        .eyebrow.status { color: #4ade80; background: rgba(74, 222, 128, .1); border-color: rgba(74, 222, 128, .35); }
+        .eyebrow.status::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #4ade80; margin-right: 8px; vertical-align: 1px; }
+
+        .edu h3.sub { margin-top: 24px; }
+        .facts { list-style: none; }
+        .facts li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px dashed var(--slate-200); }
+        .facts li:last-child { border-bottom: 0; }
+        .facts strong { font-size: 15px; }
+        .facts span { color: var(--slate-500); font-size: 15px; text-align: right; }
+
+        .lead-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .lead-card h3 { font-size: 19px; font-weight: 700; color: var(--slate); margin-bottom: 10px; }
+        .metric {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--ocean-dark);
+            background: var(--ocean-light);
+            border-radius: 999px;
+            padding: 3px 12px;
+            margin-bottom: 12px;
+        }
+        .lead-card ul { margin-left: 20px; }
+        .lead-card li + li { margin-top: 6px; }
+        .lead-card li::marker { color: var(--ocean); }
+
+        .promo {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--slate-500);
+            border: 1px solid var(--slate-200);
+            border-radius: 999px;
+            padding: 1px 10px;
+            vertical-align: 3px;
+            margin-left: 6px;
+        }
+        .sub-role { margin-top: 14px; font-size: 15px; color: var(--slate-500); }
+        .sub-role + ul { margin-top: 6px; }
+
+        .my-role {
+            font-size: 15px;
+            background: var(--slate-50);
+            border-left: 3px solid var(--ocean);
+            border-radius: 6px;
+            padding: 8px 12px;
+            margin-bottom: 12px;
+        }
+        .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 12px; }
+        .flow span {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--slate);
+            background: var(--slate-100);
+            border: 1px solid var(--slate-200);
+            border-radius: 6px;
+            padding: 3px 10px;
+        }
+        .flow span + span::before { content: "→"; color: var(--ocean); margin: 0 8px 0 -2px; font-weight: 700; }
+
+        @media (max-width: 900px) {
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .lead-grid { grid-template-columns: 1fr; }
+        }
+
         /* ---------- Responsif ---------- */
         @media (max-width: 900px) {
             .about-grid, .projects { grid-template-columns: 1fr; }
@@ -341,41 +455,55 @@
 </head>
 <body>
 
-    <nav class="nav" aria-label="Navigasi utama">
+    <nav class="nav" aria-label="Main navigation">
         <div class="container">
             <a class="brand" href="#">Arih<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#tentang">Tentang</a></li>
-                <li><a href="#keahlian">Keahlian</a></li>
-                <li><a href="#pengalaman">Pengalaman</a></li>
-                <li><a href="#proyek">Proyek</a></li>
-                <li><a href="#kontak">Kontak</a></li>
-            </ul>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="lang-switch" aria-label="Choose language">
+                    <a href="id/index.html" hreflang="id" lang="id" title="Bahasa Indonesia">ID</a>
+                    <span aria-current="true">EN</span>
+                </div>
+            </div>
         </div>
     </nav>
 
     <header class="hero">
         <div class="container hero-inner">
-            <img class="hero-photo" src="assets/arih-suaeban.jpg" alt="Foto profil Arih Juha Suaeban" width="200" height="200">
+            <img class="hero-photo" src="assets/arih-suaeban.jpg" alt="Profile photo of Arih Juha Suaeban" width="200" height="200">
             <div>
-                <span class="eyebrow">15+ tahun di software engineering</span>
+                <div class="badges">
+                    <span class="eyebrow">15+ years in software engineering</span>
+                    <span class="eyebrow status">Open to work · Available immediately</span>
+                </div>
                 <h1>Arih Juha Suaeban</h1>
                 <p class="role">Team Lead &amp; Senior Software Engineer</p>
-                <p class="tagline">.NET (C#) · Microservices · OutSystems · System Integration · AI-Driven Development</p>
+                <p class="tagline">I lead engineering teams that ship enterprise systems fast — .NET (C#), microservices, OutSystems, system integration, and AI-driven development with guardrails.</p>
 
                 <div class="hero-actions">
                     <a class="btn btn-primary" href="mailto:arih.suaeban@gmail.com">
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg>
-                        Hubungi Saya
+                        Get in Touch
                     </a>
                     <a class="btn btn-ghost" href="https://linkedin.com/in/arih-suaeban" target="_blank" rel="noopener">
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.3 18.3H5.7V9.7h2.6ZM7 8.6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm11.3 9.7h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.3h-2.6V9.7h2.5v1.2a2.7 2.7 0 0 1 2.5-1.4c2.6 0 3.1 1.7 3.1 4Z"/></svg>
                         LinkedIn
                     </a>
+                    <a class="btn btn-ghost" href="assets/CV-Arih-Juha-Suaeban-EN.pdf" download>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16 7 11l1.4-1.4 2.6 2.6V4h2v8.2l2.6-2.6L17 11Zm-7 4v-2h14v2Z"/></svg>
+                        Download CV (PDF)
+                    </a>
                 </div>
 
                 <ul class="contact-list">
-                    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Tangerang Selatan, Indonesia</li>
+                    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>South Tangerang, Indonesia · open to relocation</li>
                     <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1Z"/></svg><a href="tel:+6285691088022">(+62) 856-910-880-22</a></li>
                     <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg><a href="mailto:arih.suaeban@gmail.com">arih.suaeban@gmail.com</a></li>
                 </ul>
@@ -386,70 +514,105 @@
     <main>
         <div class="container">
             <div class="stats">
-                <div class="stat"><strong>15+</strong><span>tahun pengalaman software engineering</span></div>
-                <div class="stat"><strong>12–20+</strong><span>engineer dalam tim yang dipimpin</span></div>
-                <div class="stat"><strong>2–3×</strong><span>delivery proyek lebih cepat</span></div>
+                <div class="stat"><strong>15+ yrs</strong><span>building enterprise software</span></div>
+                <div class="stat"><strong>20+ people</strong><span>led — 10 engineers plus QA &amp; BA teams</span></div>
+                <div class="stat"><strong>20+ projects</strong><span>live for Pertamina in 6 months (Jul–Dec 2025)</span></div>
+                <div class="stat"><strong>1–1.5 mo</strong><span>kickoff to full QA, down from 3–4 months</span></div>
             </div>
         </div>
 
-        <section id="tentang">
+        <section id="about">
             <div class="container">
                 <div class="section-head">
-                    <div class="label">Tentang</div>
-                    <h2>Ringkasan Profesional</h2>
+                    <div class="label">About</div>
+                    <h2>Professional Summary</h2>
                 </div>
                 <div class="about-grid">
                     <div class="card about-text">
-                        <p>Team Lead &amp; Senior Software Engineer dengan <strong>15+ tahun pengalaman</strong> dalam merancang arsitektur sistem enterprise, pengembangan perangkat lunak skala besar, serta memimpin tim teknis lintas fungsi. Memiliki keahlian mendalam pada ekosistem <strong>.NET (C#)</strong>, <strong>arsitektur microservices</strong>, integrasi sistem end-to-end, dan platform low-code <strong>(OutSystems)</strong>.</p>
-                        <p>Berhasil memimpin tim engineering skala menengah hingga besar (<strong>12 hingga 20+ engineer</strong>) serta berkolaborasi erat dengan Product Owner, Business Analyst, dan QA team menggunakan metodologi Agile/Scrum untuk menghadirkan solusi digital berdampak tinggi di sektor energi, perbankan, telekomunikasi, dan pemerintahan. Pionir dalam mengadopsi <strong>AI-Driven Development</strong> secara terukur untuk mengefisiensikan development, menekan biaya pengembangan, dan meningkatkan kapasitas kerja tim secara signifikan.</p>
+                        <p>Team Lead &amp; Senior Software Engineer with <strong>15+ years of experience</strong> designing enterprise system architecture and leading delivery teams. Deep expertise in <strong>.NET (C#)</strong>, <strong>microservices</strong>, end-to-end system integration, and the <strong>OutSystems</strong> low-code platform.</p>
+                        <p>At PT Satu Kode Solusi I led a <strong>20+ person team — 10 engineers plus QA and BA</strong> — serving enterprise clients Pertamina, Falcker, and Philip Morris Indonesia. In the second half of 2025 the team took <strong>20+ Pertamina projects live</strong>, running 5–7 projects in parallel across 3 squads.</p>
+                        <p>I bring <strong>AI-driven development with guardrails</strong>: Claude, a shared guideline file, developer self-review, and senior code review. This cut the time from kickoff to full QA from <strong>3–4 months to 1–1.5 months</strong> per project.</p>
                     </div>
                     <div class="card edu">
-                        <h3>Pendidikan &amp; Sertifikasi</h3>
+                        <h3>Education</h3>
                         <div class="edu-item">
-                            <strong>Sarjana Ilmu Komputer (S.Kom)</strong>
-                            <span>UIN Syarif Hidayatullah Jakarta · Lulus</span>
+                            <strong>Bachelor of Computer Science (S.Kom)</strong>
+                            <span>UIN Syarif Hidayatullah Jakarta</span>
                         </div>
+                        <h3 class="sub">Certification</h3>
                         <div class="edu-item">
-                            <strong>OutSystems Certified</strong>
-                            <span>Platform low-code enterprise</span>
+                            <strong>OutSystems Associate Developer (O11)</strong>
+                            <span>OutSystems · August 2022</span>
                         </div>
+                        <h3 class="sub">Languages</h3>
+                        <ul class="facts">
+                            <li><strong>Indonesian</strong><span>Native</span></li>
+                            <li><strong>English</strong><span>Professional working proficiency</span></li>
+                        </ul>
+                        <h3 class="sub">Availability</h3>
+                        <ul class="facts">
+                            <li><strong>Start</strong><span>Immediately</span></li>
+                            <li><strong>Work setup</strong><span>Onsite, hybrid, or remote</span></li>
+                            <li><strong>Relocation</strong><span>Open to moving abroad</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="keahlian">
+        <section id="leadership">
             <div class="container">
                 <div class="section-head">
-                    <div class="label">Keahlian</div>
-                    <h2>Keahlian Utama (Tech Stack)</h2>
+                    <div class="label">Leadership</div>
+                    <h2>How I Lead Teams</h2>
                 </div>
-                <div class="skills-grid">
-                    <div class="card skill">
-                        <h3>Bahasa Pemrograman</h3>
-                        <ul class="tags"><li>C#</li><li>VB.NET</li><li>Go</li><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>PHP</li><li>Java</li><li>Swift</li><li>Objective-C</li></ul>
-                    </div>
-                    <div class="card skill">
-                        <h3>Database &amp; Enterprise</h3>
-                        <ul class="tags"><li>SQL Server</li><li>MySQL</li><li>Oracle</li><li>SQLite</li><li>OutSystems (Certified)</li><li>Dynamics CRM</li><li>SharePoint</li></ul>
-                    </div>
-                    <div class="card skill">
-                        <h3>Framework &amp; Web</h3>
-                        <ul class="tags"><li>.NET Core</li><li>ASP.NET MVC</li><li>React</li><li>Angular</li><li>Vue.js</li><li>Node.js</li><li>Yii / Yii2</li></ul>
-                    </div>
-                    <div class="card skill">
-                        <h3>Arsitektur &amp; Metodologi</h3>
-                        <ul class="tags"><li>Mikroservis</li><li>RESTful API</li><li>Agile/Scrum</li><li>Git</li><li>CI/CD</li><li>Code Review &amp; Mentoring</li></ul>
-                    </div>
+                <div class="lead-grid">
+                    <article class="card lead-card">
+                        <span class="metric">5 hires · new career ladder</span>
+                        <h3>Team structure &amp; growth</h3>
+                        <ul>
+                            <li>Introduced a career ladder that did not exist before: Junior, Mid, and Senior Developer; Junior and Senior QA.</li>
+                            <li>Built a mentoring system into each level so engineers know how to grow.</li>
+                            <li>Took part in hiring 5 team members.</li>
+                        </ul>
+                    </article>
+                    <article class="card lead-card">
+                        <span class="metric">Faster engineer rotation</span>
+                        <h3>Engineering standards</h3>
+                        <ul>
+                            <li>Coding standards based on SOLID principles.</li>
+                            <li>A standard code review process for every change.</li>
+                            <li>Solution templates as shared base code, so engineers move between projects without ramp-up.</li>
+                        </ul>
+                    </article>
+                    <article class="card lead-card">
+                        <span class="metric">5–7 projects in parallel</span>
+                        <h3>Delivery rhythm</h3>
+                        <ul>
+                            <li>Daily wrap-up: everyone sees progress and knows what to prepare for tomorrow.</li>
+                            <li>Configuration-driven technical approach that lets BA and functional staff configure features — key to meeting tight Pertamina deadlines.</li>
+                            <li>Team sharing sessions where one squad presents what it learned to the others.</li>
+                        </ul>
+                    </article>
+                    <article class="card lead-card">
+                        <span class="metric">3–4 months → 1–1.5 months</span>
+                        <h3>AI-driven development with guardrails</h3>
+                        <ul>
+                            <li>Claude as the team's AI pair programmer.</li>
+                            <li>Every change follows a shared base guideline (Markdown) file.</li>
+                            <li>Developer self-review first, then senior developer code review before merge.</li>
+                            <li>Result: much shorter time to full QA, and each squad runs more projects in parallel.</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="pengalaman">
+        <section id="experience">
             <div class="container">
                 <div class="section-head">
-                    <div class="label">Karier</div>
-                    <h2>Pengalaman Kerja</h2>
+                    <div class="label">Career</div>
+                    <h2>Work Experience</h2>
                 </div>
 
                 <div class="timeline">
@@ -459,11 +622,11 @@
                                 <h3 class="job-title">Team Lead</h3>
                                 <div class="company">PT NRA Digital Solution</div>
                             </div>
-                            <span class="period">2026 – Sekarang</span>
+                            <span class="period">2026 – Present</span>
                         </div>
                         <ul>
-                            <li><strong>Kepemimpinan &amp; Manajemen Tim:</strong> Memimpin 3–5 engineer dalam merancang arsitektur sistem cloud-ready dan mikroservis. Mengarahkan code review harian, delegasi tugas, serta mentoring untuk menjamin standar kualitas kode.</li>
-                            <li><strong>Arsitektur &amp; Integrasi:</strong> Merancang base code untuk SharePoint webpart SPFx serta solution template sebagai base code proyek berbasis Golang &amp; ReactJS.</li>
+                            <li><strong>Team leadership:</strong> Lead 3–5 engineers designing cloud-ready, microservices-based systems. Drive daily code reviews, task delegation, and mentoring to uphold code quality.</li>
+                            <li><strong>Architecture:</strong> Designed the base code for SharePoint SPFx web parts and the solution templates used to start Golang &amp; ReactJS projects.</li>
                         </ul>
                     </article>
 
@@ -476,8 +639,12 @@
                             <span class="period">2019 – 2025</span>
                         </div>
                         <ul>
-                            <li><strong>Skala Proyek &amp; Kepemimpinan:</strong> Memimpin 5–10 engineer dalam merancang dan menyelesaikan produk/proyek klien. Mengelola anggaran (budgeting), menetapkan target tahunan tim, serta memelopori implementasi AI-driven development yang terkontrol untuk mempercepat proses pengembangan aplikasi.</li>
-                            <li><strong>Dampak Bisnis:</strong> Membangun standarisasi arsitektur sistem untuk memperlancar rotasi engineer antar-proyek. Meningkatkan kapasitas penanganan proyek secara simultan dan mempercepat waktu delivery proyek <strong>2 hingga 3 kali lebih cepat</strong>.</li>
+                            <li><strong>Team &amp; budget:</strong> Led 20+ people — 10 engineers in 3 squads of 3–4, plus QA and BA teams. Managed an annual budget of about IDR 2 billion and set yearly team targets.</li>
+                            <li><strong>Clients:</strong> Pertamina (multiple applications including DOAS and SOLIDS), Falcker (FFP, LOCO, Operator Round, SmartIS), and Philip Morris Indonesia (Customer Loyalty).</li>
+                            <li><strong>Delivery:</strong> Took <strong>20+ Pertamina projects live between July and December 2025</strong>, with 5–7 projects running at the same time.</li>
+                            <li><strong>AI-driven development:</strong> Rolled out Claude with guardrails; time from kickoff to full QA dropped from 3–4 months to 1–1.5 months per project.</li>
+                            <li><strong>People &amp; standards:</strong> Created the team's career ladder and mentoring system, helped hire 5 people, and set SOLID-based coding standards, code review, and solution templates.</li>
+                            <li><strong>Production support:</strong> Restored Falcker services quickly after Azure App Service configuration changes and recovered failed data transfers.</li>
                         </ul>
                     </article>
 
@@ -490,8 +657,8 @@
                             <span class="period">2018 – 2019</span>
                         </div>
                         <ul>
-                            <li><strong>Kompleksitas Sistem &amp; IoT:</strong> Mengembangkan aplikasi IoT Artilium (Parateum Belgia) berbasis framework .NET Core dan MySQL.</li>
-                            <li><strong>Pengembangan &amp; Review:</strong> Membangun RESTful API sesuai spesifikasi dokumen teknis, memimpin code review tim engineer, serta mengembangkan antarmuka front-end menggunakan Vue.js.</li>
+                            <li><strong>IoT platform:</strong> Developed the Artilium IoT application (Parateum, Belgium) on .NET Core and MySQL, used by thousands in Belgium.</li>
+                            <li><strong>Development &amp; review:</strong> Built RESTful APIs to technical specifications, led code reviews for the engineering team, and built the Vue.js front end.</li>
                         </ul>
                     </article>
 
@@ -504,8 +671,10 @@
                             <span class="period">2017 – 2018</span>
                         </div>
                         <ul>
-                            <li><strong>Pemrosesan Data Skala Besar:</strong> Mengembangkan sistem pemrosesan data menggunakan Python dan Golang untuk pengiriman pesan massal (blasting) ke belasan juta pengemudi dan penumpang sesuai batasan waktu dan ketentuan bisnis.</li>
-                            <li><strong>Otomasi Operasional:</strong> Membantu efisiensi operasional tim non-IT melalui otomatisasi tools (seperti Invoice Builder berbasis Golang dan Asset Monitoring berbasis Google Apps Script) serta optimasi front-end mobile-friendly.</li>
+                            <li><strong>Large-scale messaging:</strong> Built Python and Golang jobs that sent campaigns of <strong>12–13 million messages</strong> to drivers and passengers across Southeast Asia, within time windows and business rules.</li>
+                            <li><strong>Invoice Builder (Golang):</strong> Cut invoice preparation from <strong>5 interns over 1–2 weeks to 1–2 hours</strong>.</li>
+                            <li><strong>Asset Monitoring (Google Apps Script):</strong> Replaced monthly manual recaps, where data was scattered and lost, with real-time tracking.</li>
+                            <li>Built lightweight, mobile-friendly front ends from UI/UX designs.</li>
                         </ul>
                     </article>
 
@@ -518,54 +687,48 @@
                             <span class="period">2015 – 2017</span>
                         </div>
                         <ul>
-                            <li><strong>Sistem Enterprise &amp; Integrasi:</strong> Mengembangkan aplikasi desktop penjualan menggunakan framework WCF yang diimplementasikan pada anak perusahaan (Indomarco) nasional. Membangun pipeline unggah data harian &amp; integrasi ke sistem SAP menggunakan SSIS.</li>
+                            <li><strong>Enterprise sales system:</strong> Developed a WCF-based desktop sales application rolled out to <strong>hundreds of Indomarco branches</strong> across Indonesia, each handling hundreds of transactions.</li>
+                            <li><strong>SAP integration:</strong> Built daily data-upload pipelines and SAP integration with SSIS.</li>
                         </ul>
                     </article>
 
                     <article class="card job">
                         <div class="job-head">
                             <div>
-                                <h3 class="job-title">Senior Software Engineer</h3>
+                                <h3 class="job-title">Senior Software Engineer <span class="promo">promoted 2012</span></h3>
                                 <div class="company">PT Aditya Arta Abadi</div>
                             </div>
-                            <span class="period">2012 – 2015</span>
+                            <span class="period">2009 – 2015</span>
                         </div>
+                        <p class="sub-role"><strong>Senior Software Engineer</strong> · 2012 – 2015</p>
                         <ul>
-                            <li>Memimpin tim (3–5 engineer) membangun sistem keuangan, perizinan, &amp; e-procurement instansi pemerintah berbasis ASP.NET &amp; MSSQL.</li>
-                            <li>Membuat code generator dan base component UI.</li>
+                            <li>Led a team of 3–5 engineers building finance, licensing, and e-procurement systems for government agencies on ASP.NET &amp; MSSQL.</li>
+                            <li>Built a code generator and reusable base UI components used in every project.</li>
                         </ul>
-                    </article>
-
-                    <article class="card job">
-                        <div class="job-head">
-                            <div>
-                                <h3 class="job-title">Software Engineer</h3>
-                                <div class="company">PT Aditya Arta Abadi</div>
-                            </div>
-                            <span class="period">2009 – 2011</span>
-                        </div>
+                        <p class="sub-role"><strong>Software Engineer</strong> · 2009 – 2011</p>
                         <ul>
-                            <li>Mengumpulkan requirement, merancang model database, &amp; mengembangkan aplikasi metodologi Waterfall berbasis .NET, PHP, dan SQL Server.</li>
+                            <li>Gathered requirements, designed database models, and built applications with .NET, PHP, and SQL Server (Waterfall).</li>
                         </ul>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="proyek">
+        <section id="projects">
             <div class="container">
                 <div class="section-head">
-                    <div class="label">Portofolio</div>
-                    <h2>Proyek Unggulan &amp; Arsitektur Kompleks</h2>
+                    <div class="label">Portfolio</div>
+                    <h2>Featured Projects &amp; Architecture</h2>
                 </div>
 
                 <div class="projects">
                     <article class="card project">
                         <h3>DOAS</h3>
                         <div class="client">PT Pertamina</div>
+                        <p class="my-role"><strong>My role:</strong> Technical Lead — defined the technical approach and built the core engine other developers built on.</p>
                         <ul>
-                            <li>Sistem Manajemen Dokumen &amp; Berita Acara lintas entitas (holding &amp; anak perusahaan) dengan version control dan dynamic approval.</li>
-                            <li>Integrasi data karyawan multi-perusahaan &amp; tanda tangan digital Privy end-to-end.</li>
+                            <li>Document &amp; official report (Berita Acara) management across the holding and its subsidiaries, with version control and dynamic approval.</li>
+                            <li>End-to-end integration of multi-company employee data and Privy digital signatures.</li>
                         </ul>
                         <ul class="tags"><li>.NET Core</li><li>SQL Server</li><li>REST API</li><li>Privy Digital Signature</li></ul>
                     </article>
@@ -573,40 +736,45 @@
                     <article class="card project">
                         <h3>SOLIDS Application</h3>
                         <div class="client">PT Pertamina</div>
+                        <p class="my-role"><strong>My role:</strong> Technical Lead — defined the technical approach and built the core engine other developers built on.</p>
                         <ul>
-                            <li>Arsitektur pemantauan stok BBM real-time terintegrasi Power BI.</li>
-                            <li>Modul forecasting presisi untuk volume impor BBM &amp; integrasi SAP ERP.</li>
+                            <li>Real-time fuel stock monitoring integrated with Power BI.</li>
+                            <li>Configurable forecasting module for fuel import volumes, with SAP ERP integration.</li>
                         </ul>
                         <ul class="tags"><li>.NET Core</li><li>ReactJS</li><li>Power BI</li><li>SAP Integration</li></ul>
+                    </article>
+
+                    <article class="card project">
+                        <h3>Operator Round</h3>
+                        <div class="client">Falcker</div>
+                        <p class="my-role"><strong>My role:</strong> Solution Architect — designed the end-to-end flow and built the 3D processing service.</p>
+                        <div class="flow" aria-label="Data flow">
+                            <span>AWS</span><span>Azure App Service</span><span>Blob Storage</span><span>Backend API</span><span>Frontend</span>
+                        </div>
+                        <ul>
+                            <li>Real-time, drone-based visual inspection of fuel storage tanks at terminals.</li>
+                            <li>Azure service pulls drone imagery from AWS, generates KRpano 3D/panorama models, and uploads results to Azure Blob Storage.</li>
+                        </ul>
+                        <ul class="tags"><li>OutSystems</li><li>.NET Core</li><li>Azure</li><li>AWS</li><li>KRpano JS</li></ul>
                     </article>
 
                     <article class="card project">
                         <h3>FFP &amp; LOCO Application</h3>
                         <div class="client">Falcker</div>
                         <ul>
-                            <li>Solusi OutSystems dengan hybrid backend C# .NET Core.</li>
-                            <li>Modul Fit-For-Purpose (FFP) untuk kelayakan tangki terminal (API/EEMUA).</li>
-                            <li>Engine LOCO dinamis berbasis konfigurasi &amp; version control.</li>
+                            <li>OutSystems solution with a hybrid C# .NET Core backend.</li>
+                            <li>Fit-For-Purpose (FFP) module to assess terminal storage tank fitness (API/EEMUA).</li>
+                            <li>Dynamic, configuration-driven LOCO engine with publishing and version control.</li>
                         </ul>
                         <ul class="tags"><li>OutSystems</li><li>.NET Core C#</li><li>Low-Code Hybrid</li></ul>
-                    </article>
-
-                    <article class="card project">
-                        <h3>Operator Round</h3>
-                        <div class="client">Falcker</div>
-                        <ul>
-                            <li>Sistem inspeksi visual tangki BBM real-time berbasis drone.</li>
-                            <li>Azure App Service sebagai middle process untuk model 3D/panorama KRpano yang menjembatani AWS &amp; Azure Blob Storage.</li>
-                        </ul>
-                        <ul class="tags"><li>OutSystems</li><li>.NET Core</li><li>Azure</li><li>AWS</li><li>KRpano JS</li></ul>
                     </article>
 
                     <article class="card project">
                         <h3>Sales Force Automation</h3>
                         <div class="client">Atri Distribusindo</div>
                         <ul>
-                            <li>Aplikasi mobile penjualan: absensi GPS, tracking, visit planning, canvas order.</li>
-                            <li>Integrasi thermal printer untuk cetak struk di lapangan.</li>
+                            <li>Mobile sales app: GPS attendance, tracking, visit planning, canvas orders, and complex discount and bonus rules.</li>
+                            <li>Thermal printer integration for on-site receipts.</li>
                         </ul>
                         <ul class="tags"><li>Xamarin</li><li>PHP</li><li>GPS</li><li>Thermal Printer</li></ul>
                     </article>
@@ -615,34 +783,66 @@
                         <h3>Sales Illustration System</h3>
                         <div class="client">Avrist Insurance</div>
                         <ul>
-                            <li>Transformasi produk asuransi dari Excel ke web app tablet-friendly.</li>
-                            <li>Advanced query untuk kalkulasi aktuaris.</li>
+                            <li>Turned Excel-based insurance products into a tablet-friendly web app with actuaries.</li>
+                            <li>Advanced database queries for heavy actuarial calculations.</li>
                         </ul>
                         <ul class="tags"><li>.NET Framework</li><li>SQL Server</li><li>Web</li></ul>
                     </article>
 
                     <article class="card project">
-                        <h3>ChatBot Insurance</h3>
-                        <div class="client">Asuransi</div>
+                        <h3>Insurance ChatBot</h3>
+                        <div class="client">Insurance</div>
                         <ul>
-                            <li>Integrasi IBM Watson &amp; Dialogflow dengan backend Node.js.</li>
-                            <li>Frontend iOS (Objective-C/Swift) untuk sistem asuransi.</li>
+                            <li>IBM Watson &amp; Dialogflow integration with a Node.js backend.</li>
+                            <li>iOS app (Objective-C/Swift) connected to the insurance illustration system.</li>
                         </ul>
                         <ul class="tags"><li>Node.js</li><li>IBM Watson</li><li>Swift</li><li>Xcode</li></ul>
                     </article>
                 </div>
             </div>
         </section>
+
+        <section id="skills">
+            <div class="container">
+                <div class="section-head">
+                    <div class="label">Skills</div>
+                    <h2>Skills &amp; Tech Stack</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="card skill skill-core">
+                        <h3>Core Expertise</h3>
+                        <ul class="tags primary"><li>C# / .NET Core</li><li>ASP.NET MVC</li><li>Microservices</li><li>RESTful API</li><li>Go</li><li>React</li><li>SQL Server</li><li>OutSystems (O11)</li><li>Azure</li></ul>
+                    </div>
+                    <div class="card skill">
+                        <h3>Leadership &amp; Delivery</h3>
+                        <ul class="tags"><li>Engineering Team Leadership</li><li>Hiring &amp; Career Ladders</li><li>Code Review &amp; Mentoring</li><li>Agile/Scrum</li><li>SOLID Principles</li><li>Budgeting &amp; Team Targets</li><li>AI-Driven Development (Claude)</li><li>Git &amp; CI/CD</li></ul>
+                    </div>
+                    <div class="card skill">
+                        <h3>Cloud &amp; Integration</h3>
+                        <ul class="tags"><li>Azure App Service</li><li>Azure &amp; AWS Blob Storage</li><li>SAP ERP Integration</li><li>SSIS</li><li>Power BI</li><li>Privy Digital Signature</li><li>SharePoint SPFx</li></ul>
+                    </div>
+                    <div class="card skill">
+                        <h3>Data &amp; Enterprise Platforms</h3>
+                        <ul class="tags"><li>SQL Server</li><li>MySQL</li><li>Oracle</li><li>SQLite</li><li>Dynamics CRM</li><li>SharePoint</li></ul>
+                    </div>
+                    <div class="card skill">
+                        <h3>Also Worked With</h3>
+                        <ul class="tags muted"><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>PHP</li><li>Java</li><li>VB.NET</li><li>Vue.js</li><li>Angular</li><li>Node.js</li><li>Yii / Yii2</li><li>Xamarin</li><li>Swift</li><li>Objective-C</li></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer id="kontak">
+    <footer id="contact">
         <div class="container">
-            <h2>Mari berdiskusi</h2>
-            <p>Terbuka untuk peluang sebagai Team Lead atau Senior Software Engineer.</p>
+            <h2>Let's talk</h2>
+            <p>Available immediately for Team Lead and Senior Software Engineer roles — onsite, hybrid, or remote, and open to relocating abroad.</p>
             <div class="hero-actions">
                 <a class="btn btn-primary" href="mailto:arih.suaeban@gmail.com">arih.suaeban@gmail.com</a>
                 <a class="btn btn-ghost" href="tel:+6285691088022">(+62) 856-910-880-22</a>
                 <a class="btn btn-ghost" href="https://linkedin.com/in/arih-suaeban" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="btn btn-ghost" href="assets/CV-Arih-Juha-Suaeban-EN.pdf" download>Download CV (PDF)</a>
             </div>
             <small>© 2026 Arih Juha Suaeban</small>
         </div>

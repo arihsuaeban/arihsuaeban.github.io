@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arih Juha Suaeban — Team Lead & Senior Software Engineer</title>
+    <meta name="description" content="Arih Juha Suaeban — Team Lead & Senior Software Engineer dengan 15+ tahun pengalaman di .NET, microservices, OutSystems, dan AI-Driven Development.">
+    <meta name="author" content="Arih Juha Suaeban">
+    <meta name="theme-color" content="#0f172a">
+    <meta property="og:title" content="Arih Juha Suaeban — Team Lead & Senior Software Engineer">
+    <meta property="og:description" content="15+ tahun merancang sistem enterprise dan memimpin tim engineering.">
+    <meta property="og:image" content="https://arihsuaeban.github.io/assets/og-image.png">
+    <meta property="og:url" content="https://arihsuaeban.github.io/id/">
+    <link rel="alternate" hreflang="en" href="https://arihsuaeban.github.io/">
+    <link rel="alternate" hreflang="id" href="https://arihsuaeban.github.io/id/">
+    <meta property="og:type" content="profile">
+    <link rel="canonical" href="https://arihsuaeban.github.io/id/">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/arih-suaeban.jpg">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Arih Juha Suaeban",
+        "jobTitle": "Team Lead & Senior Software Engineer",
+        "url": "https://arihsuaeban.github.io/id/",
+        "image": "https://arihsuaeban.github.io/assets/arih-suaeban.jpg",
+        "email": "mailto:arih.suaeban@gmail.com",
+        "telephone": "+62-856-910-880-22",
+        "address": { "@type": "PostalAddress", "addressLocality": "Tangerang Selatan", "addressCountry": "ID" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "UIN Syarif Hidayatullah Jakarta" },
+        "knowsLanguage": ["id", "en"],
+        "hasCredential": { "@type": "EducationalOccupationalCredential", "name": "OutSystems Associate Developer (O11)", "dateCreated": "2022-08" },
+        "sameAs": ["https://linkedin.com/in/arih-suaeban"],
+        "knowsAbout": [".NET", "C#", "Microservices", "OutSystems", "Go", "React", "SQL Server", "Azure", "System Integration", "AI-Driven Development", "Engineering Leadership"]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --slate: #0f172a;
+            --slate-800: #1e293b;
+            --slate-700: #334155;
+            --slate-500: #64748b;
+            --slate-300: #cbd5e1;
+            --slate-200: #e2e8f0;
+            --slate-100: #f1f5f9;
+            --slate-50: #f8fafc;
+            --ocean: #0284c7;
+            --ocean-dark: #0369a1;
+            --ocean-light: #e0f2fe;
+            --ocean-soft: #38bdf8;
+            --radius: 16px;
+            --max: 1080px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+        body {
+            font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+            font-size: 16px;
+            line-height: 1.65;
+            color: var(--slate-700);
+            background: var(--slate-50);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--ocean); text-decoration: none; }
+        a:hover { color: var(--ocean-dark); }
+        img { max-width: 100%; display: block; }
+
+        .container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+        /* ---------- Navigasi ---------- */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(15, 23, 42, .92);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, .08);
+        }
+        .nav .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+        .brand { color: #fff; font-weight: 800; font-size: 18px; letter-spacing: -.01em; }
+        .brand span { color: var(--ocean-soft); }
+        .nav-links { display: flex; gap: 28px; list-style: none; }
+        .nav-links a { color: var(--slate-300); font-size: 15px; font-weight: 500; }
+        .nav-links a:hover { color: #fff; }
+
+        .nav-right { display: flex; align-items: center; gap: 28px; }
+        .lang-switch {
+            display: flex;
+            border: 1px solid rgba(255, 255, 255, .2);
+            border-radius: 999px;
+            padding: 3px;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1;
+        }
+        .lang-switch a, .lang-switch span { padding: 6px 12px; border-radius: 999px; color: var(--slate-300); }
+        .lang-switch a:hover { color: #fff; }
+        .lang-switch span[aria-current] { background: var(--ocean); color: #fff; }
+
+        /* ---------- Hero ---------- */
+        .hero {
+            background: var(--slate);
+            color: #fff;
+            padding: 72px 0 120px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 560px;
+            height: 560px;
+            right: -160px;
+            top: -200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(2, 132, 199, .45), rgba(2, 132, 199, 0) 70%);
+        }
+        .hero-inner {
+            position: relative;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .hero-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--ocean);
+            box-shadow: 0 0 0 10px rgba(2, 132, 199, .15);
+        }
+        .eyebrow {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--ocean-soft);
+            background: rgba(56, 189, 248, .12);
+            border: 1px solid rgba(56, 189, 248, .3);
+            border-radius: 999px;
+            padding: 4px 14px;
+            margin-bottom: 16px;
+        }
+        .hero h1 {
+            font-size: clamp(34px, 5vw, 52px);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -.025em;
+        }
+        .hero .role {
+            font-size: clamp(18px, 2.4vw, 22px);
+            font-weight: 600;
+            color: var(--ocean-soft);
+            margin-top: 10px;
+        }
+        .hero .tagline { color: var(--slate-300); margin-top: 12px; max-width: 620px; }
+
+        .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 12px 20px;
+            border-radius: 10px;
+            transition: background .2s, color .2s, border-color .2s;
+        }
+        .btn svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
+        .btn-primary { background: var(--ocean); color: #fff; }
+        .btn-primary:hover { background: var(--ocean-dark); color: #fff; }
+        .btn-ghost { color: #fff; border: 1px solid rgba(255, 255, 255, .25); }
+        .btn-ghost:hover { border-color: var(--ocean-soft); color: var(--ocean-soft); }
+
+        .contact-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            list-style: none;
+            margin-top: 24px;
+            font-size: 15px;
+            color: var(--slate-300);
+        }
+        .contact-list li { display: flex; align-items: center; gap: 8px; }
+        .contact-list svg { width: 16px; height: 16px; fill: var(--ocean-soft); flex-shrink: 0; }
+        .contact-list a { color: var(--slate-300); }
+        .contact-list a:hover { color: #fff; }
+
+        /* ---------- Statistik ---------- */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: -64px;
+            position: relative;
+        }
+        .stat {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 24px 28px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, .08);
+            border-top: 4px solid var(--ocean);
+        }
+        .stat strong { display: block; font-size: 32px; font-weight: 800; color: var(--slate); line-height: 1.2; }
+        .stat span { color: var(--slate-500); font-size: 15px; }
+
+        /* ---------- Section ---------- */
+        section { padding: 72px 0 0; }
+        section:last-of-type { padding-bottom: 72px; }
+        .section-head { margin-bottom: 32px; }
+        .section-head .label {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--ocean);
+        }
+        .section-head h2 {
+            font-size: clamp(26px, 3.5vw, 34px);
+            font-weight: 800;
+            color: var(--slate);
+            letter-spacing: -.02em;
+            line-height: 1.2;
+            margin-top: 6px;
+        }
+        strong { color: var(--slate); font-weight: 600; }
+
+        .card {
+            background: #fff;
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius);
+            padding: 28px;
+        }
+
+        /* Tentang */
+        .about-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 24px; }
+        .about-text p { font-size: 17px; }
+        .about-text p + p { margin-top: 16px; }
+        .edu h3 { font-size: 15px; font-weight: 700; color: var(--ocean); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 12px; }
+        .edu-item + .edu-item { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--slate-200); }
+        .edu-item strong { display: block; font-size: 17px; }
+        .edu-item span { color: var(--slate-500); }
+
+        /* Keahlian */
+        .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .skill h3 { font-size: 18px; font-weight: 700; color: var(--slate); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+        .skill h3::before { content: ""; width: 10px; height: 10px; border-radius: 3px; background: var(--ocean); }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+        .tags li {
+            font-size: 14px;
+            font-weight: 500;
+            background: var(--slate-100);
+            color: var(--slate-800);
+            border: 1px solid var(--slate-200);
+            border-radius: 8px;
+            padding: 4px 12px;
+        }
+        .skill-core { grid-column: 1 / -1; border-top: 4px solid var(--ocean); }
+        .tags.primary li { background: var(--ocean); border-color: var(--ocean); color: #fff; font-weight: 600; }
+        .tags.muted li { background: #fff; color: var(--slate-500); }
+
+        /* Pengalaman */
+        .timeline { position: relative; padding-left: 32px; }
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 7px;
+            top: 8px;
+            bottom: 8px;
+            width: 2px;
+            background: var(--slate-200);
+        }
+        .job { position: relative; }
+        .job + .job { margin-top: 20px; }
+        .job::before {
+            content: "";
+            position: absolute;
+            left: -32px;
+            top: 30px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #fff;
+            border: 3px solid var(--ocean);
+        }
+        .job-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+        .job-title { font-size: 20px; font-weight: 700; color: var(--slate); line-height: 1.3; }
+        .company { color: var(--ocean); font-weight: 600; font-size: 17px; margin-top: 2px; }
+        .period {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--ocean-dark);
+            background: var(--ocean-light);
+            border-radius: 999px;
+            padding: 4px 14px;
+            white-space: nowrap;
+        }
+        .job ul { margin: 14px 0 0 20px; }
+        .job li + li { margin-top: 8px; }
+        .job li::marker { color: var(--ocean); }
+
+        /* Proyek */
+        .projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .project {
+            display: flex;
+            flex-direction: column;
+            border-top: 4px solid var(--ocean);
+            transition: transform .2s, box-shadow .2s;
+        }
+        .project:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(15, 23, 42, .08); }
+        .project h3 { font-size: 20px; font-weight: 700; color: var(--slate); line-height: 1.3; }
+        .client { font-size: 15px; font-weight: 600; color: var(--ocean); margin: 4px 0 12px; }
+        .project ul { margin-left: 20px; flex: 1; }
+        .project li + li { margin-top: 6px; }
+        .project li::marker { color: var(--ocean); }
+        .project .tags { margin-top: 18px; }
+        .project .tags li { font-size: 13px; background: var(--ocean-light); border-color: transparent; color: var(--ocean-dark); }
+
+        /* Footer */
+        footer {
+            background: var(--slate);
+            color: var(--slate-300);
+            padding: 48px 0;
+            text-align: center;
+        }
+        footer h2 { color: #fff; font-size: 26px; font-weight: 800; letter-spacing: -.02em; }
+        footer p { margin-top: 8px; }
+        footer .hero-actions { justify-content: center; }
+        footer small { display: block; margin-top: 32px; color: var(--slate-500); font-size: 14px; }
+
+        /* ---------- Tambahan: badge, kepemimpinan, proyek ---------- */
+        .stats { grid-template-columns: repeat(4, 1fr); }
+        .stat strong { font-size: 26px; }
+        .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+        .badges .eyebrow { margin-bottom: 0; }
+        .eyebrow.status { color: #4ade80; background: rgba(74, 222, 128, .1); border-color: rgba(74, 222, 128, .35); }
+        .eyebrow.status::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #4ade80; margin-right: 8px; vertical-align: 1px; }
+
+        .edu h3.sub { margin-top: 24px; }
+        .facts { list-style: none; }
+        .facts li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px dashed var(--slate-200); }
+        .facts li:last-child { border-bottom: 0; }
+        .facts strong { font-size: 15px; }
+        .facts span { color: var(--slate-500); font-size: 15px; text-align: right; }
+
+        .lead-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .lead-card h3 { font-size: 19px; font-weight: 700; color: var(--slate); margin-bottom: 10px; }
+        .metric {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--ocean-dark);
+            background: var(--ocean-light);
+            border-radius: 999px;
+            padding: 3px 12px;
+            margin-bottom: 12px;
+        }
+        .lead-card ul { margin-left: 20px; }
+        .lead-card li + li { margin-top: 6px; }
+        .lead-card li::marker { color: var(--ocean); }
+
+        .promo {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--slate-500);
+            border: 1px solid var(--slate-200);
+            border-radius: 999px;
+            padding: 1px 10px;
+            vertical-align: 3px;
+            margin-left: 6px;
+        }
+        .sub-role { margin-top: 14px; font-size: 15px; color: var(--slate-500); }
+        .sub-role + ul { margin-top: 6px; }
+
+        .my-role {
+            font-size: 15px;
+            background: var(--slate-50);
+            border-left: 3px solid var(--ocean);
+            border-radius: 6px;
+            padding: 8px 12px;
+            margin-bottom: 12px;
+        }
+        .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 12px; }
+        .flow span {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--slate);
+            background: var(--slate-100);
+            border: 1px solid var(--slate-200);
+            border-radius: 6px;
+            padding: 3px 10px;
+        }
+        .flow span + span::before { content: "→"; color: var(--ocean); margin: 0 8px 0 -2px; font-weight: 700; }
+
+        @media (max-width: 900px) {
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .lead-grid { grid-template-columns: 1fr; }
+        }
+
+        /* ---------- Responsif ---------- */
+        @media (max-width: 900px) {
+            .about-grid, .projects { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 720px) {
+            .container { padding: 0 16px; }
+            .nav-links { display: none; }
+            .hero { padding: 48px 0 104px; }
+            .hero-inner { grid-template-columns: 1fr; gap: 24px; text-align: center; justify-items: center; }
+            .hero-photo { width: 150px; height: 150px; }
+            .hero .tagline { margin-left: auto; margin-right: auto; }
+            .hero-actions { justify-content: center; }
+            .btn { flex: 1 1 100%; justify-content: center; }
+            .contact-list { flex-direction: column; align-items: center; gap: 8px; }
+            .stats { grid-template-columns: 1fr; gap: 12px; }
+            .stat { padding: 18px 20px; display: flex; align-items: baseline; gap: 12px; }
+            .stat strong { font-size: 26px; white-space: nowrap; }
+            section { padding-top: 56px; }
+            section:last-of-type { padding-bottom: 56px; }
+            .card { padding: 20px; }
+            .skills-grid { grid-template-columns: 1fr; }
+            .timeline { padding-left: 24px; }
+            .timeline::before { left: 5px; }
+            .job::before { left: -24px; width: 12px; height: 12px; top: 26px; }
+            .job-title { font-size: 18px; }
+        }
+
+        /* ---------- Cetak ---------- */
+        @media print {
+            .nav, .hero-actions, footer .hero-actions { display: none; }
+            body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .stats { margin-top: 16px; }
+            .card, .job, .project { break-inside: avoid; }
+            .project:hover { transform: none; box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav" aria-label="Navigasi utama">
+        <div class="container">
+            <a class="brand" href="#">Arih<span>.</span></a>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#kepemimpinan">Kepemimpinan</a></li>
+                    <li><a href="#pengalaman">Pengalaman</a></li>
+                    <li><a href="#proyek">Proyek</a></li>
+                    <li><a href="#keahlian">Keahlian</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+                <div class="lang-switch" aria-label="Pilih bahasa">
+                    <span aria-current="true">ID</span>
+                    <a href="../index.html" hreflang="en" lang="en" title="English">EN</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-inner">
+            <img class="hero-photo" src="../assets/arih-suaeban.jpg" alt="Foto profil Arih Juha Suaeban" width="200" height="200">
+            <div>
+                <div class="badges">
+                    <span class="eyebrow">15+ tahun di software engineering</span>
+                    <span class="eyebrow status">Terbuka untuk peluang · Siap segera</span>
+                </div>
+                <h1>Arih Juha Suaeban</h1>
+                <p class="role">Team Lead &amp; Senior Software Engineer</p>
+                <p class="tagline">Memimpin tim engineering yang mengirim sistem enterprise dengan cepat — .NET (C#), microservices, OutSystems, integrasi sistem, dan AI-driven development dengan guardrail.</p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="mailto:arih.suaeban@gmail.com">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg>
+                        Hubungi Saya
+                    </a>
+                    <a class="btn btn-ghost" href="https://linkedin.com/in/arih-suaeban" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.3 18.3H5.7V9.7h2.6ZM7 8.6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm11.3 9.7h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.3h-2.6V9.7h2.5v1.2a2.7 2.7 0 0 1 2.5-1.4c2.6 0 3.1 1.7 3.1 4Z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a class="btn btn-ghost" href="../assets/CV-Arih-Juha-Suaeban-ID.pdf" download>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16 7 11l1.4-1.4 2.6 2.6V4h2v8.2l2.6-2.6L17 11Zm-7 4v-2h14v2Z"/></svg>
+                        Unduh CV (PDF)
+                    </a>
+                </div>
+
+                <ul class="contact-list">
+                    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Tangerang Selatan, Indonesia · bersedia relokasi</li>
+                    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1Z"/></svg><a href="tel:+6285691088022">(+62) 856-910-880-22</a></li>
+                    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg><a href="mailto:arih.suaeban@gmail.com">arih.suaeban@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="stats">
+                <div class="stat"><strong>15+ tahun</strong><span>membangun software enterprise</span></div>
+                <div class="stat"><strong>20+ orang</strong><span>dipimpin — 10 engineer plus tim QA &amp; BA</span></div>
+                <div class="stat"><strong>20+ proyek</strong><span>go-live untuk Pertamina dalam 6 bulan (Jul–Des 2025)</span></div>
+                <div class="stat"><strong>1–1,5 bln</strong><span>dari kickoff ke full QA, sebelumnya 3–4 bulan</span></div>
+            </div>
+        </div>
+
+        <section id="tentang">
+            <div class="container">
+                <div class="section-head">
+                    <div class="label">Tentang</div>
+                    <h2>Ringkasan Profesional</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="card about-text">
+                        <p>Team Lead &amp; Senior Software Engineer dengan <strong>15+ tahun pengalaman</strong> merancang arsitektur sistem enterprise dan memimpin tim delivery. Keahlian mendalam pada <strong>.NET (C#)</strong>, <strong>microservices</strong>, integrasi sistem end-to-end, dan platform low-code <strong>OutSystems</strong>.</p>
+                        <p>Di PT Satu Kode Solusi, saya memimpin <strong>tim 20+ orang — 10 engineer plus QA dan BA</strong> — untuk klien enterprise Pertamina, Falcker, dan Philip Morris Indonesia. Pada semester kedua 2025, tim berhasil membawa <strong>20+ proyek Pertamina go-live</strong>, dengan 5–7 proyek berjalan paralel di 3 squad.</p>
+                        <p>Saya menerapkan <strong>AI-driven development dengan guardrail</strong>: Claude, file panduan bersama, self-review developer, dan code review senior. Hasilnya, waktu dari kickoff hingga full QA turun dari <strong>3–4 bulan menjadi 1–1,5 bulan</strong> per proyek.</p>
+                    </div>
+                    <div class="card edu">
+                        <h3>Pendidikan</h3>
+                        <div class="edu-item">
+                            <strong>Sarjana Ilmu Komputer (S.Kom)</strong>
+                            <span>UIN Syarif Hidayatullah Jakarta</span>
+                        </div>
+                        <h3 class="sub">Sertifikasi</h3>
+                        <div class="edu-item">
+                            <strong>OutSystems Associate Developer (O11)</strong>
+                            <span>OutSystems · Agustus 2022</span>
+                        </div>
+                        <h3 class="sub">Bahasa</h3>
+                        <ul class="facts">
+                            <li><strong>Indonesia</strong><span>Bahasa ibu</span></li>
+                            <li><strong>Inggris</strong><span>Professional working proficiency</span></li>
+                        </ul>
+                        <h3 class="sub">Ketersediaan</h3>
+                        <ul class="facts">
+                            <li><strong>Mulai</strong><span>Segera</span></li>
+                            <li><strong>Model kerja</strong><span>Onsite, hybrid, atau remote</span></li>
+                            <li><strong>Relokasi</strong><span>Bersedia ke luar negeri</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kepemimpinan">
+            <div class="container">
+                <div class="section-head">
+                    <div class="label">Kepemimpinan</div>
+                    <h2>Cara Saya Memimpin Tim</h2>
+                </div>
+                <div class="lead-grid">
+                    <article class="card lead-card">
+                        <span class="metric">5 rekrutan · jenjang karier baru</span>
+                        <h3>Struktur tim &amp; pengembangan</h3>
+                        <ul>
+                            <li>Membangun jenjang karier yang sebelumnya tidak ada: Junior, Mid, dan Senior Developer; Junior dan Senior QA.</li>
+                            <li>Menyertakan sistem mentoring di setiap jenjang agar engineer tahu cara berkembang.</li>
+                            <li>Ikut merekrut 5 anggota tim.</li>
+                        </ul>
+                    </article>
+                    <article class="card lead-card">
+                        <span class="metric">Rotasi engineer lebih cepat</span>
+                        <h3>Standar engineering</h3>
+                        <ul>
+                            <li>Standar kode berbasis prinsip SOLID.</li>
+                            <li>Proses code review yang baku untuk setiap perubahan.</li>
+                            <li>Solution template sebagai base code bersama, sehingga engineer bisa pindah proyek tanpa masa adaptasi panjang.</li>
+                        </ul>
+                    </article>
+                    <article class="card lead-card">
+                        <span class="metric">5–7 proyek paralel</span>
+                        <h3>Ritme delivery</h3>
+                        <ul>
+                            <li>Wrap-up harian: semua orang melihat progres dan tahu apa yang perlu disiapkan esok hari.</li>
+                            <li>Pendekatan teknis berbasis konfigurasi sehingga tim BA/fungsional bisa ikut mengonfigurasi fitur — kunci untuk deadline ketat Pertamina.</li>
+                            <li>Sharing session hangat di mana satu squad membagikan hal yang dipelajari ke tim lain.</li>
+                        </ul>
+                    </article>
+                    <article class="card lead-card">
+                        <span class="metric">3–4 bulan → 1–1,5 bulan</span>
+                        <h3>AI-driven development dengan guardrail</h3>
+                        <ul>
+                            <li>Claude sebagai AI pair programmer tim.</li>
+                            <li>Setiap perubahan mengikuti file panduan dasar (Markdown) yang sudah ditetapkan.</li>
+                            <li>Self-review oleh developer, lalu code review oleh senior developer sebelum merge.</li>
+                            <li>Hasil: waktu ke full QA jauh lebih singkat, dan tiap squad bisa mengerjakan lebih banyak proyek paralel.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="pengalaman">
+            <div class="container">
+                <div class="section-head">
+                    <div class="label">Karier</div>
+                    <h2>Pengalaman Kerja</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="card job">
+                        <div class="job-head">
+                            <div>
+                                <h3 class="job-title">Team Lead</h3>
+                                <div class="company">PT NRA Digital Solution</div>
+                            </div>
+                            <span class="period">2026 – Sekarang</span>
+                        </div>
+                        <ul>
+                            <li><strong>Kepemimpinan tim:</strong> Memimpin 3–5 engineer merancang sistem cloud-ready berbasis microservices. Mengarahkan code review harian, delegasi tugas, dan mentoring untuk menjaga kualitas kode.</li>
+                            <li><strong>Arsitektur:</strong> Merancang base code SharePoint SPFx web part dan solution template untuk memulai proyek Golang &amp; ReactJS.</li>
+                        </ul>
+                    </article>
+
+                    <article class="card job">
+                        <div class="job-head">
+                            <div>
+                                <h3 class="job-title">Team Lead</h3>
+                                <div class="company">PT Satu Kode Solusi</div>
+                            </div>
+                            <span class="period">2019 – 2025</span>
+                        </div>
+                        <ul>
+                            <li><strong>Tim &amp; anggaran:</strong> Memimpin 20+ orang — 10 engineer dalam 3 squad berisi 3–4 developer, plus tim QA dan BA. Mengelola anggaran sekitar Rp2 miliar per tahun dan menetapkan target tahunan tim.</li>
+                            <li><strong>Klien:</strong> Pertamina (beberapa aplikasi, termasuk DOAS dan SOLIDS), Falcker (FFP, LOCO, Operator Round, SmartIS), dan Philip Morris Indonesia (Customer Loyalty).</li>
+                            <li><strong>Delivery:</strong> Membawa <strong>20+ proyek Pertamina go-live dalam Juli–Desember 2025</strong>, dengan 5–7 proyek berjalan bersamaan.</li>
+                            <li><strong>AI-driven development:</strong> Menerapkan Claude dengan guardrail; waktu dari kickoff hingga full QA turun dari 3–4 bulan menjadi 1–1,5 bulan per proyek.</li>
+                            <li><strong>Orang &amp; standar:</strong> Membangun jenjang karier dan sistem mentoring, ikut merekrut 5 orang, serta menetapkan standar kode berbasis SOLID, code review, dan solution template.</li>
+                            <li><strong>Dukungan produksi:</strong> Memulihkan layanan Falcker dengan cepat saat konfigurasi Azure App Service berubah, dan memperbaiki pengiriman data yang gagal.</li>
+                        </ul>
+                    </article>
+
+                    <article class="card job">
+                        <div class="job-head">
+                            <div>
+                                <h3 class="job-title">Senior Software Engineer</h3>
+                                <div class="company">PT Dshore Indonesia</div>
+                            </div>
+                            <span class="period">2018 – 2019</span>
+                        </div>
+                        <ul>
+                            <li><strong>Platform IoT:</strong> Mengembangkan aplikasi IoT Artilium (Parateum, Belgia) berbasis .NET Core dan MySQL, digunakan ribuan pengguna di Belgia.</li>
+                            <li><strong>Pengembangan &amp; review:</strong> Membangun RESTful API sesuai spesifikasi teknis, memimpin code review tim engineer, dan membangun front-end Vue.js.</li>
+                        </ul>
+                    </article>
+
+                    <article class="card job">
+                        <div class="job-head">
+                            <div>
+                                <h3 class="job-title">Senior Software Engineer</h3>
+                                <div class="company">PT STI (Grab Indonesia)</div>
+                            </div>
+                            <span class="period">2017 – 2018</span>
+                        </div>
+                        <ul>
+                            <li><strong>Pengiriman pesan skala besar:</strong> Membangun job Python dan Golang yang mengirim kampanye <strong>12–13 juta pesan</strong> ke pengemudi dan penumpang di seluruh Asia Tenggara, sesuai batas waktu dan aturan bisnis.</li>
+                            <li><strong>Invoice Builder (Golang):</strong> Memangkas penyusunan invoice dari <strong>5 intern selama 1–2 minggu menjadi 1–2 jam</strong>.</li>
+                            <li><strong>Asset Monitoring (Google Apps Script):</strong> Menggantikan rekap manual bulanan yang datanya terpecah dan hilang dengan pemantauan real-time.</li>
+                            <li>Membangun front-end ringan dan mobile-friendly sesuai desain UI/UX.</li>
+                        </ul>
+                    </article>
+
+                    <article class="card job">
+                        <div class="job-head">
+                            <div>
+                                <h3 class="job-title">SPV Non-ABAP Developer</h3>
+                                <div class="company">PT Indofood Sukses Makmur</div>
+                            </div>
+                            <span class="period">2015 – 2017</span>
+                        </div>
+                        <ul>
+                            <li><strong>Sistem penjualan enterprise:</strong> Mengembangkan aplikasi desktop penjualan berbasis WCF yang digunakan di <strong>ratusan cabang Indomarco</strong> di seluruh Indonesia, masing-masing menangani ratusan transaksi.</li>
+                            <li><strong>Integrasi SAP:</strong> Membangun pipeline unggah data harian dan integrasi ke SAP menggunakan SSIS.</li>
+                        </ul>
+                    </article>
+
+                    <article class="card job">
+                        <div class="job-head">
+                            <div>
+                                <h3 class="job-title">Senior Software Engineer <span class="promo">promosi 2012</span></h3>
+                                <div class="company">PT Aditya Arta Abadi</div>
+                            </div>
+                            <span class="period">2009 – 2015</span>
+                        </div>
+                        <p class="sub-role"><strong>Senior Software Engineer</strong> · 2012 – 2015</p>
+                        <ul>
+                            <li>Memimpin tim 3–5 engineer membangun sistem keuangan, perizinan, dan e-procurement untuk instansi pemerintah berbasis ASP.NET &amp; MSSQL.</li>
+                            <li>Membuat code generator dan komponen UI dasar yang dipakai di setiap proyek.</li>
+                        </ul>
+                        <p class="sub-role"><strong>Software Engineer</strong> · 2009 – 2011</p>
+                        <ul>
+                            <li>Mengumpulkan requirement, merancang model database, dan membangun aplikasi dengan .NET, PHP, dan SQL Server (Waterfall).</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyek">
+            <div class="container">
+                <div class="section-head">
+                    <div class="label">Portofolio</div>
+                    <h2>Proyek Unggulan &amp; Arsitektur</h2>
+                </div>
+
+                <div class="projects">
+                    <article class="card project">
+                        <h3>DOAS</h3>
+                        <div class="client">PT Pertamina</div>
+                        <p class="my-role"><strong>Peran saya:</strong> Technical Lead — menentukan pendekatan teknis dan membangun core engine yang dipakai developer lain.</p>
+                        <ul>
+                            <li>Manajemen dokumen &amp; Berita Acara lintas holding dan anak perusahaan, dengan version control dan dynamic approval.</li>
+                            <li>Integrasi end-to-end data karyawan multi-perusahaan dan tanda tangan digital Privy.</li>
+                        </ul>
+                        <ul class="tags"><li>.NET Core</li><li>SQL Server</li><li>REST API</li><li>Privy Digital Signature</li></ul>
+                    </article>
+
+                    <article class="card project">
+                        <h3>SOLIDS Application</h3>
+                        <div class="client">PT Pertamina</div>
+                        <p class="my-role"><strong>Peran saya:</strong> Technical Lead — menentukan pendekatan teknis dan membangun core engine yang dipakai developer lain.</p>
+                        <ul>
+                            <li>Pemantauan stok BBM real-time terintegrasi Power BI.</li>
+                            <li>Modul forecasting volume impor BBM yang dapat dikonfigurasi, terintegrasi SAP ERP.</li>
+                        </ul>
+                        <ul class="tags"><li>.NET Core</li><li>ReactJS</li><li>Power BI</li><li>SAP Integration</li></ul>
+                    </article>
+
+                    <article class="card project">
+                        <h3>Operator Round</h3>
+                        <div class="client">Falcker</div>
+                        <p class="my-role"><strong>Peran saya:</strong> Solution Architect — merancang alur end-to-end dan membangun layanan pemrosesan 3D.</p>
+                        <div class="flow" aria-label="Alur data">
+                            <span>AWS</span><span>Azure App Service</span><span>Blob Storage</span><span>Backend API</span><span>Frontend</span>
+                        </div>
+                        <ul>
+                            <li>Inspeksi visual tangki BBM di terminal secara real-time berbasis drone.</li>
+                            <li>Layanan Azure mengambil foto drone dari AWS, membuat model 3D/panorama KRpano, lalu mengunggah hasilnya ke Azure Blob Storage.</li>
+                        </ul>
+                        <ul class="tags"><li>OutSystems</li><li>.NET Core</li><li>Azure</li><li>AWS</li><li>KRpano JS</li></ul>
+                    </article>
+
+                    <article class="card project">
+                        <h3>FFP &amp; LOCO Application</h3>
+                        <div class="client">Falcker</div>
+                        <ul>
+                            <li>Solusi OutSystems dengan hybrid backend C# .NET Core.</li>
+                            <li>Modul Fit-For-Purpose (FFP) untuk menilai kelayakan tangki terminal (API/EEMUA).</li>
+                            <li>Engine LOCO dinamis berbasis konfigurasi dengan mekanisme publish dan version control.</li>
+                        </ul>
+                        <ul class="tags"><li>OutSystems</li><li>.NET Core C#</li><li>Low-Code Hybrid</li></ul>
+                    </article>
+
+                    <article class="card project">
+                        <h3>Sales Force Automation</h3>
+                        <div class="client">Atri Distribusindo</div>
+                        <ul>
+                            <li>Aplikasi mobile penjualan: absensi GPS, tracking, visit planning, canvas order, serta perhitungan diskon dan bonus yang kompleks.</li>
+                            <li>Integrasi printer thermal untuk cetak struk di lapangan.</li>
+                        </ul>
+                        <ul class="tags"><li>Xamarin</li><li>PHP</li><li>GPS</li><li>Thermal Printer</li></ul>
+                    </article>
+
+                    <article class="card project">
+                        <h3>Sales Illustration System</h3>
+                        <div class="client">Avrist Insurance</div>
+                        <ul>
+                            <li>Mengubah produk asuransi berbasis Excel menjadi web app ramah tablet bersama tim aktuaris.</li>
+                            <li>Advanced query database untuk kalkulasi aktuaria yang berat.</li>
+                        </ul>
+                        <ul class="tags"><li>.NET Framework</li><li>SQL Server</li><li>Web</li></ul>
+                    </article>
+
+                    <article class="card project">
+                        <h3>ChatBot Asuransi</h3>
+                        <div class="client">Asuransi</div>
+                        <ul>
+                            <li>Integrasi IBM Watson &amp; Dialogflow dengan backend Node.js.</li>
+                            <li>Aplikasi iOS (Objective-C/Swift) yang terhubung ke sistem ilustrasi asuransi.</li>
+                        </ul>
+                        <ul class="tags"><li>Node.js</li><li>IBM Watson</li><li>Swift</li><li>Xcode</li></ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="keahlian">
+            <div class="container">
+                <div class="section-head">
+                    <div class="label">Keahlian</div>
+                    <h2>Keahlian &amp; Tech Stack</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="card skill skill-core">
+                        <h3>Keahlian Inti</h3>
+                        <ul class="tags primary"><li>C# / .NET Core</li><li>ASP.NET MVC</li><li>Mikroservis</li><li>RESTful API</li><li>Go</li><li>React</li><li>SQL Server</li><li>OutSystems (O11)</li><li>Azure</li></ul>
+                    </div>
+                    <div class="card skill">
+                        <h3>Kepemimpinan &amp; Delivery</h3>
+                        <ul class="tags"><li>Kepemimpinan Tim Engineering</li><li>Rekrutmen &amp; Jenjang Karier</li><li>Code Review &amp; Mentoring</li><li>Agile/Scrum</li><li>Prinsip SOLID</li><li>Anggaran &amp; Target Tim</li><li>AI-Driven Development (Claude)</li><li>Git &amp; CI/CD</li></ul>
+                    </div>
+                    <div class="card skill">
+                        <h3>Cloud &amp; Integrasi</h3>
+                        <ul class="tags"><li>Azure App Service</li><li>Azure &amp; AWS Blob Storage</li><li>Integrasi SAP ERP</li><li>SSIS</li><li>Power BI</li><li>Privy Digital Signature</li><li>SharePoint SPFx</li></ul>
+                    </div>
+                    <div class="card skill">
+                        <h3>Data &amp; Platform Enterprise</h3>
+                        <ul class="tags"><li>SQL Server</li><li>MySQL</li><li>Oracle</li><li>SQLite</li><li>Dynamics CRM</li><li>SharePoint</li></ul>
+                    </div>
+                    <div class="card skill">
+                        <h3>Pernah Digunakan</h3>
+                        <ul class="tags muted"><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>PHP</li><li>Java</li><li>VB.NET</li><li>Vue.js</li><li>Angular</li><li>Node.js</li><li>Yii / Yii2</li><li>Xamarin</li><li>Swift</li><li>Objective-C</li></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="kontak">
+        <div class="container">
+            <h2>Mari berdiskusi</h2>
+            <p>Siap segera untuk posisi Team Lead atau Senior Software Engineer — onsite, hybrid, atau remote, dan bersedia relokasi ke luar negeri.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="mailto:arih.suaeban@gmail.com">arih.suaeban@gmail.com</a>
+                <a class="btn btn-ghost" href="tel:+6285691088022">(+62) 856-910-880-22</a>
+                <a class="btn btn-ghost" href="https://linkedin.com/in/arih-suaeban" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="btn btn-ghost" href="../assets/CV-Arih-Juha-Suaeban-ID.pdf" download>Unduh CV (PDF)</a>
+            </div>
+            <small>© 2026 Arih Juha Suaeban</small>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -415,6 +415,18 @@
             .lead-grid { grid-template-columns: 1fr; }
         }
 
+        .section-lead { margin-top: 8px; color: var(--slate-500); font-size: 17px; }
+        .other-grid { columns: 2; column-gap: 20px; }
+        .other { break-inside: avoid; margin-bottom: 20px; display: inline-block; width: 100%; }
+        .other h3 { font-size: 18px; font-weight: 700; color: var(--slate); display: flex; align-items: center; gap: 10px; }
+        .other h3::before { content: ""; width: 10px; height: 10px; border-radius: 3px; background: var(--ocean); flex-shrink: 0; }
+        .stack-note { font-size: 14px; color: var(--ocean-dark); font-weight: 600; margin-top: 4px; }
+        .other ul { list-style: none; margin-top: 12px; }
+        .other li { padding: 8px 0; border-top: 1px solid var(--slate-100); }
+        .other li strong { display: block; font-size: 15px; font-weight: 600; line-height: 1.4; }
+        .other li span { display: block; font-size: 14px; color: var(--slate-500); }
+        @media (max-width: 900px) { .other-grid { columns: 1; } }
+
         /* ---------- Responsif ---------- */
         @media (max-width: 900px) {
             .about-grid, .projects { grid-template-columns: 1fr; }
@@ -620,7 +632,7 @@
                         <div class="job-head">
                             <div>
                                 <h3 class="job-title">Team Lead</h3>
-                                <div class="company">PT NRA Digital Solution</div>
+                                <div class="company">PT NRA Digital Solusindo</div>
                             </div>
                             <span class="period">2026 – Sekarang</span>
                         </div>
@@ -717,8 +729,9 @@
         <section id="proyek">
             <div class="container">
                 <div class="section-head">
-                    <div class="label">Portofolio</div>
-                    <h2>Proyek Unggulan &amp; Arsitektur</h2>
+                    <div class="label">Highlight</div>
+                    <h2>Highlight Proyek</h2>
+                    <p class="section-lead">Proyek pilihan di mana saya menentukan arah teknis atau arsitekturnya.</p>
                 </div>
 
                 <div class="projects">
@@ -791,12 +804,101 @@
 
                     <article class="card project">
                         <h3>ChatBot Asuransi</h3>
-                        <div class="client">Asuransi</div>
+                        <div class="client">AIA</div>
                         <ul>
                             <li>Integrasi IBM Watson &amp; Dialogflow dengan backend Node.js.</li>
                             <li>Aplikasi iOS (Objective-C/Swift) yang terhubung ke sistem ilustrasi asuransi.</li>
                         </ul>
                         <ul class="tags"><li>Node.js</li><li>IBM Watson</li><li>Swift</li><li>Xcode</li></ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyek-lainnya">
+            <div class="container">
+                <div class="section-head">
+                    <div class="label">Karya lainnya</div>
+                    <h2>Proyek Lainnya</h2>
+                    <p class="section-lead">40 proyek lain untuk klien energi, keuangan, pemerintahan, ritel, dan telekomunikasi sejak 2009.</p>
+                </div>
+
+                <div class="other-grid">
+                    <article class="card other">
+                        <h3>.NET Core &amp; React</h3>
+                        <ul>
+                            <li><strong>HRIS</strong><span>Braderparts · React, .NET Core</span></li>
+                            <li><strong>LCMS</strong><span>PT Pertamina · .NET Core</span></li>
+                            <li><strong>Paradise (Asset Tracking)</strong><span>PT Pertamina · .NET Core</span></li>
+                            <li><strong>iMeals Application</strong><span>PT Pertamina · .NET Core</span></li>
+                            <li><strong>ASCOPE Website</strong><span>PT Pertamina · .NET Core</span></li>
+                            <li><strong>PWH</strong><span>Philip Morris International · .NET Core</span></li>
+                            <li><strong>CHE Fortune</strong><span>Philip Morris International · .NET Core</span></li>
+                            <li><strong>HVB</strong><span>.NET Core, React</span></li>
+                            <li><strong>Sales Force Automation</strong><span>Braderparts · .NET Core, React, Swift, Xamarin</span></li>
+                            <li><strong>Dashboard Monitoring</strong><span>Jatis · .NET Core, React</span></li>
+                            <li><strong>Aplikasi IoT</strong><span>Artilium · .NET Core</span></li>
+                            <li><strong>Aplikasi CDME</strong><span>BNI · .NET Core, React</span></li>
+                            <li><strong>Company Profile</strong><span>KPI · .NET Core MVC</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="card other">
+                        <h3>ASP.NET Enterprise &amp; Pemerintahan</h3>
+                        <p class="stack-note">ASP.NET · SQL Server · DevExpress</p>
+                        <ul>
+                            <li><strong>Aplikasi Quick Count dengan SMS Gateway</strong></li>
+                            <li><strong>Sistem Informasi Keuangan</strong><span>Dinas DPU DKI Jakarta</span></li>
+                            <li><strong>Sistem Informasi Proyek</strong><span>Dinas DPU DKI Jakarta</span></li>
+                            <li><strong>Monitoring Konsultan (timesheet)</strong><span>PT Pertamina</span></li>
+                            <li><strong>E-Corr</strong><span>PT Pertamina</span></li>
+                            <li><strong>Selling Application</strong><span>BRP</span></li>
+                            <li><strong>Sistem Perizinan Manajer Investasi</strong><span>Bapepam-LK</span></li>
+                            <li><strong>Sistem Pelaporan Perusahaan Efek</strong><span>Bapepam-LK</span></li>
+                            <li><strong>E-Learning V1, V2, V3</strong><span>BPPK</span></li>
+                            <li><strong>Database Pembangunan Wilayah</strong><span>Bappeda Kutai Barat</span></li>
+                            <li><strong>Aplikasi Performance Appraisal</strong><span>KSEI</span></li>
+                            <li><strong>Sistem Informasi Kesehatan Integrasi Puskesmas</strong><span>Dinas Kesehatan DKI Jakarta</span></li>
+                            <li><strong>Sistem Informasi Eksekutif Kepegawaian</strong><span>Ditjen Perhubungan Laut</span></li>
+                            <li><strong>Sistem Informasi Manajemen Keuangan</strong><span>RRI</span></li>
+                            <li><strong>Electronic Procurement</strong><span>Rekayasa Industri · juga VB.NET</span></li>
+                            <li><strong>Asset Management System</strong><span>Jeddah</span></li>
+                            <li><strong>Budget Monitoring System</strong><span>BNP2TKI</span></li>
+                            <li><strong>Regional Financial Accounting System</strong><span>Pemkab Nabire</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="card other">
+                        <h3>SharePoint &amp; Platform Enterprise</h3>
+                        <ul>
+                            <li><strong>Aplikasi Periskop</strong><span>OJK · SharePoint, React</span></li>
+                            <li><strong>SCM Portal</strong><span>PT Pertamina Hulu Energi · SharePoint 2010, Ajax</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="card other">
+                        <h3>Mobile</h3>
+                        <ul>
+                            <li><strong>Sales Illustration System (iOS)</strong><span>AIA · Xcode, Objective-C</span></li>
+                            <li><strong>Sales Force Automation (Windows &amp; mobile)</strong><span>Indofood · SQL Server, WCF, Xamarin, SQLite</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="card other">
+                        <h3>Python, Go &amp; Otomasi</h3>
+                        <ul>
+                            <li><strong>Growth Team</strong><span>Grab Indonesia · Python, Go, JavaScript</span></li>
+                            <li><strong>Business Automation Team</strong><span>Grab Indonesia · Go, Google Apps Script</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="card other">
+                        <h3>PHP &amp; Java</h3>
+                        <ul>
+                            <li><strong>Penerimaan Peserta Didik Baru (PPDB)</strong><span>Dinas Pendidikan DKI Jakarta · PHP Yii2, Oracle</span></li>
+                            <li><strong>Form Pengajuan Permintaan Karyawan</strong><span>ACC · PHP Yii, Oracle</span></li>
+                            <li><strong>Manual Transcription Tool</strong><span>Telecats · Java, AngularJS</span></li>
+                        </ul>
                     </article>
                 </div>
             </div>

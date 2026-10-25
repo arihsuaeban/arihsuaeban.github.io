@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arih Juha Suaeban - Senior Software Engineer & Team Lead</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#ecfeff',
+                            100: '#cffaff',
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                            900: '#164e63',
+                        },
+                        darkbg: '#0f172a',
+                        darkcard: '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Custom Glowing & Backdrop Effects */
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.25);
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 35px 0px rgba(6, 182, 212, 0.45);
+        }
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0891b2;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-slate-950 font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    AS
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block group-hover:text-cyan-400 transition-colors">Arih Juha S.</span>
+                    <span class="text-xs text-cyan-400 font-medium block">Senior Lead Engineer</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
+                <a href="#budget-calculator" class="hover:text-cyan-400 transition-colors">Budget Calculator</a>
+            </nav>
+
+            <!-- Action CTAs -->
+            <div class="hidden md:flex items-center gap-3">
+                <a href="mailto:arih.suaeban@gmail.com" class="px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-sm transition-all shadow-md shadow-cyan-500/20 hover:shadow-cyan-500/40">
+                    <i class="fa-regular fa-paper-plane mr-2"></i>Hire Me
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-400 hover:text-white text-xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-cyan-400 mobile-nav-link">About</a>
+            <a href="#skills" class="block py-2 text-slate-300 hover:text-cyan-400 mobile-nav-link">Skills</a>
+            <a href="#projects" class="block py-2 text-slate-300 hover:text-cyan-400 mobile-nav-link">Projects</a>
+            <a href="#experience" class="block py-2 text-slate-300 hover:text-cyan-400 mobile-nav-link">Experience</a>
+            <a href="#budget-calculator" class="block py-2 text-slate-300 hover:text-cyan-400 mobile-nav-link">Budget Calculator</a>
+            <a href="mailto:arih.suaeban@gmail.com" class="block w-full text-center py-3 rounded-lg bg-cyan-500 text-slate-950 font-semibold text-sm">
+                Get In Touch
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="pt-20">
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="relative py-20 lg:py-28 overflow-hidden">
+            <!-- Background Glow Orbs -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute top-1/3 right-10 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Hero Intro -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs sm:text-sm font-semibold tracking-wide">
+                            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                            Available for Global Remote & Leadership Opportunities
+                        </div>
+                        
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                            Senior Software Engineer & <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500">Team Lead</span>
+                        </h1>
+                        
+                        <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            <span class="font-semibold text-white">15+ years of experience</span> (since 2009) engineering scalable .NET architectures, cloud microservices, and rapid low-code solutions. Specialist in end-to-end SDLC management, team guidance, and project budgeting.
+                        </p>
+
+                        <!-- Key Badges -->
+                        <div class="flex flex-wrap gap-2 justify-center lg:justify-start pt-2">
+                            <span class="px-3 py-1 rounded-md bg-slate-800 border border-slate-700 text-xs font-mono text-cyan-300">
+                                <i class="fa-solid fa-certificate text-yellow-400 mr-1.5"></i>OutSystems O11 Certified
+                            </span>
+                            <span class="px-3 py-1 rounded-md bg-slate-800 border border-slate-700 text-xs font-mono text-slate-300">
+                                <i class="fa-brands fa-microsoft text-blue-400 mr-1.5"></i>.NET / C# Architecture
+                            </span>
+                            <span class="px-3 py-1 rounded-md bg-slate-800 border border-slate-700 text-xs font-mono text-slate-300">
+                                <i class="fa-brands fa-aws text-orange-400 mr-1.5"></i>Cloud & VPS Admin
+                            </span>
+                            <span class="px-3 py-1 rounded-md bg-slate-800 border border-slate-700 text-xs font-mono text-slate-300">
+                                <i class="fa-solid fa-users-gear text-teal-400 mr-1.5"></i>Team Leadership & Budgeting
+                            </span>
+                        </div>
+
+                        <!-- Hero CTA Buttons -->
+                        <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-4">
+                            <a href="#projects" class="px-6 py-3.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all flex items-center gap-2">
+                                <i class="fa-solid fa-layer-group"></i> Explore Projects
+                            </a>
+                            <a href="#budget-calculator" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-sm border border-slate-700 hover:border-cyan-500/50 transition-all flex items-center gap-2">
+                                <i class="fa-solid fa-calculator text-cyan-400"></i> Budget Estimator
+                            </a>
+                            <button onclick="copyContactInfo('arih.suaeban@gmail.com')" class="px-4 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700/80 text-sm transition-all flex items-center gap-2" title="Copy Email">
+                                <i class="fa-regular fa-copy text-slate-400"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Stats & Profile Highlights Card -->
+                    <div class="lg:col-span-5">
+                        <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 glow-effect relative">
+                            <div class="flex items-center gap-4 border-b border-slate-800 pb-6 mb-6">
+                                <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-slate-950 text-2xl font-black shadow-lg">
+                                    AS
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Arih Juha Suaeban</h3>
+                                    <p class="text-xs text-cyan-400 font-mono">B.Sc. Computer Science (UIN Jakarta)</p>
+                                    <div class="flex items-center gap-2 mt-1 text-xs text-slate-400">
+                                        <i class="fa-solid fa-location-dot text-cyan-500"></i> Indonesia (Available Global Remote)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Metrics Grid -->
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+                                    <div class="text-3xl font-extrabold text-cyan-400">15+</div>
+                                    <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Years Experience</div>
+                                </div>
+                                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+                                    <div class="text-3xl font-extrabold text-blue-400">O11</div>
+                                    <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">OutSystems Certified</div>
+                                </div>
+                                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+                                    <div class="text-3xl font-extrabold text-teal-400">50+</div>
+                                    <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Enterprise Deliveries</div>
+                                </div>
+                                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+                                    <div class="text-3xl font-extrabold text-indigo-400">100%</div>
+                                    <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">SDLC Ownership</div>
+                                </div>
+                            </div>
+
+                            <!-- Fast Contact Links -->
+                            <div class="mt-6 pt-6 border-t border-slate-800 flex items-center justify-between text-slate-400 text-sm">
+                                <span>Get in direct touch:</span>
+                                <div class="flex items-center gap-3">
+                                    <a href="mailto:arih.suaeban@gmail.com" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 flex items-center justify-center transition-colors" title="Email">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </a>
+                                    <a href="https://wa.me/6285691088022" target="_blank" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-emerald-500 hover:text-slate-950 flex items-center justify-center transition-colors" title="WhatsApp">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                    <a href="https://linkedin.com" target="_blank" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-blue-600 hover:text-white flex items-center justify-center transition-colors" title="LinkedIn">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT & BIOGRAPHY -->
+        <section id="about" class="py-16 bg-slate-950/60 border-y border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center space-y-4 mb-12">
+                    <h2 class="text-xs font-mono font-bold tracking-widest text-cyan-400 uppercase">Professional Profile</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Bridging Deep Tech Architecture with Strategic Management</h3>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Feature Card 1 -->
+                    <div class="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">High-Load Engineering</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Expertise in C#, .NET, .NET Core, Microservices, and multithreaded concurrent systems designed for security, high throughput, and fault tolerance.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Low-Code (OutSystems O11)</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Certified OutSystems Associate Developer (O11) experienced in accelerating enterprise application delivery while integrating with custom REST APIs.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Resource & Budget Planning</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Hands-on technical leadership in project estimation, team hour allocation, infrastructure budgeting (AWS/VPS), and client stakeholder alignment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS MATRIX SECTION -->
+        <section id="skills" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div>
+                        <h2 class="text-xs font-mono font-bold tracking-widest text-cyan-400 uppercase mb-2">Core Competencies</h2>
+                        <h3 class="text-3xl font-extrabold text-white">Technical Ecosystem & Expertise</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-2 md:mt-0 max-w-md">
+                        Comprehensive expertise cultivated over 15+ years across backend, frontend, databases, cloud DevOps, and tech management.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Skill Box: Backend & Languages -->
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-800">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fa-solid fa-server text-cyan-400 text-lg"></i>
+                            <h4 class="font-bold text-white">Backend & Core Languages</h4>
+                        </div>
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex justify-between text-xs font-medium mb-1">
+                                    <span class="text-slate-300">.NET / C# / ASP.NET Core</span>
+                                    <span class="text-cyan-400 font-mono">Expert (15+ yrs)</span>
+                                </div>
+                                <div class="w-full bg-slate-900 rounded-full h-1.5">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-1.5 rounded-full w-[98%]"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-medium mb-1">
+                                    <span class="text-slate-300">Go (Golang) & Python</span>
+                                    <span class="text-cyan-400 font-mono">Proficient</span>
+                                </div>
+                                <div class="w-full bg-slate-900 rounded-full h-1.5">
+                                    <div class="bg-cyan-500 h-1.5 rounded-full w-[85%]"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-medium mb-1">
+                                    <span class="text-slate-300">PHP, Java & Node.js</span>
+                                    <span class="text-cyan-400 font-mono">Experienced</span>
+                                </div>
+                                <div class="w-full bg-slate-900 rounded-full h-1.5">
+                                    <div class="bg-cyan-500 h-1.5 rounded-full w-[80%]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Box: Low-Code & Frontend -->
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-800">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fa-solid fa-laptop-code text-blue-400 text-lg"></i>
+                            <h4 class="font-bold text-white">Low-Code & Frontend</h4>
+                        </div>
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex justify-between text-xs font-medium mb-1">
+                                    <span class="text-slate-300">OutSystems (O11 Certified)</span>
+                                    <span class="text-blue-400 font-mono">Certified Associate</span>
+                                </div>
+                                <div class="w-full bg-slate-900 rounded-full h-1.5">
+                                    <div class="bg-blue-500 h-1.5 rounded-full w-[95%]"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-medium mb-1">
+                                    <span class="text-slate-300">React, Angular & Vue.js</span>
+                                    <span class="text-blue-400 font-mono">Advanced</span>
+                                </div>
+                                <div class="w-full bg-slate-900 rounded-full h-1.5">
+                                    <div class="bg-blue-500 h-1.5 rounded-full w-[88%]"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-medium mb-1">
+                                    <span class="text-slate-300">Tailwind CSS, TypeScript & JS</span>
+                                    <span class="text-blue-400 font-mono">Expert</span>
+                                </div>
+                                <div class="w-full bg-slate-900 rounded-full h-1.5">
+                                    <div class="bg-blue-500 h-1.5 rounded-full w-[90%]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Box: Databases & Cloud -->
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-800">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fa-solid fa-database text-teal-400 text-lg"></i>
+                            <h4 class="font-bold text-white">Databases & Cloud DevOps</h4>
+                        </div>
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex justify-between text-xs font-medium mb-1">
+                                    <span class="text-slate-300">SQL Server, PostgreSQL & MySQL</span>
+                                    <span class="text-teal-400 font-mono">Expert</span>
+                                </div>
+                                <div class="w-full bg-slate-900 rounded-full h-1.5">
+                                    <div class="bg-teal-500 h-1.5 rounded-full w-[95%]"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-medium mb-1">
+                                    <span class="text-slate-300">AWS Services & Infra Setup</span>
+                                    <span class="text-teal-400 font-mono">Advanced</span>
+                                </div>
+                                <div class="w-full bg-slate-900 rounded-full h-1.5">
+                                    <div class="bg-teal-500 h-1.5 rounded-full w-[85%]"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-medium mb-1">
+                                    <span class="text-slate-300">VPS Admin, Plesk & SSL Mgmt</span>
+                                    <span class="text-teal-400 font-mono">Expert</span>
+                                </div>
+                                <div class="w-full bg-slate-900 rounded-full h-1.5">
+                                    <div class="bg-teal-500 h-1.5 rounded-full w-[90%]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- DYNAMIC PROJECT PORTFOLIO SECTION WITH FILTERING & SEARCH -->
+        <section id="projects" class="py-20 bg-slate-950/80 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Header -->
+                <div class="max-w-3xl mb-10">
+                    <h2 class="text-xs font-mono font-bold tracking-widest text-cyan-400 uppercase mb-2">Selected Work & Case Studies</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Enterprise Systems & Key Deliveries</h3>
+                    <p class="text-slate-400 text-sm mt-2">Filter by domain, technology, or search specific keywords in real-time.</p>
+                </div>
+
+                <!-- Filter Controls & Search Bar -->
+                <div class="flex flex-col lg:flex-row gap-4 items-stretch lg:items-center justify-between mb-8">
+                    <!-- Filter Badges -->
+                    <div class="flex flex-wrap gap-2" id="project-filters">
+                        <button data-filter="all" class="filter-btn active px-4 py-2 rounded-xl text-xs font-bold transition-all bg-cyan-500 text-slate-950 shadow-md">
+                            All Projects
+                        </button>
+                        <button data-filter="dotnet" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-800 text-slate-300 hover:bg-slate-700">
+                            .NET & Enterprise
+                        </button>
+                        <button data-filter="outsystems" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-800 text-slate-300 hover:bg-slate-700">
+                            OutSystems & Low-Code
+                        </button>
+                        <button data-filter="cloud" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-800 text-slate-300 hover:bg-slate-700">
+                            Cloud & Web Portals
+                        </button>
+                        <button data-filter="leadership" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-800 text-slate-300 hover:bg-slate-700">
+                            Leadership & FinTech
+                        </button>
+                    </div>
+
+                    <!-- Search Input -->
+                    <div class="relative w-full lg:w-72">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500 text-xs"></i>
+                        <input type="text" id="project-search" placeholder="Search title or tech stack..." class="w-full bg-slate-900 border border-slate-800 rounded-xl pl-9 pr-4 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                    </div>
+                </div>
+
+                <!-- Projects Grid Container -->
+                <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dynamic project cards injected by JavaScript -->
+                </div>
+
+                <!-- Empty State Alert -->
+                <div id="no-projects-found" class="hidden text-center py-16 bg-slate-900/40 rounded-2xl border border-slate-800">
+                    <i class="fa-solid fa-folder-open text-4xl text-slate-600 mb-3"></i>
+                    <h4 class="text-white font-bold">No matching projects found</h4>
+                    <p class="text-xs text-slate-400 mt-1">Try broadening your search term or select another category filter.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- INTERACTIVE BUDGET & TEAM COST CALCULATOR TOOL -->
+        <section id="budget-calculator" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="max-w-3xl mb-12">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-mono font-semibold mb-3">
+                        <i class="fa-solid fa-calculator"></i> Strategic Lead Feature
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Project & Team Budget Estimator</h2>
+                    <p class="text-slate-400 text-sm mt-2">
+                        Demonstrating project estimation skills. Use this tool to simulate engineering sprint hours and estimated project budgets based on tech stack requirements.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-8 bg-slate-800/40 p-6 sm:p-8 rounded-3xl border border-slate-800">
+                    
+                    <!-- Left Options Selection Form -->
+                    <div class="lg:col-span-7 space-y-6">
+                        
+                        <!-- Stack Selection -->
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Primary Technology Architecture</label>
+                            <div class="grid grid-cols-2 gap-3" id="calc-stack-options">
+                                <button type="button" data-stack-cost="45" data-stack-name=".NET Core & Microservices" class="calc-stack-btn active p-3 rounded-xl bg-cyan-500/20 border-2 border-cyan-500 text-left transition-all">
+                                    <div class="font-bold text-white text-sm">.NET Core / C#</div>
+                                    <div class="text-[11px] text-cyan-300">Enterprise High-Load</div>
+                                </button>
+                                <button type="button" data-stack-cost="55" data-stack-name="OutSystems Low-Code" class="calc-stack-btn p-3 rounded-xl bg-slate-900 border-2 border-slate-800 text-left transition-all hover:border-slate-700">
+                                    <div class="font-bold text-white text-sm">OutSystems (O11)</div>
+                                    <div class="text-[11px] text-slate-400">Rapid Enterprise Delivery</div>
+                                </button>
+                                <button type="button" data-stack-cost="40" data-stack-name="Full-Stack React/.NET" class="calc-stack-btn p-3 rounded-xl bg-slate-900 border-2 border-slate-800 text-left transition-all hover:border-slate-700">
+                                    <div class="font-bold text-white text-sm">React + .NET API</div>
+                                    <div class="text-[11px] text-slate-400">Modern Web Platform</div>
+                                </button>
+                                <button type="button" data-stack-cost="35" data-stack-name="PHP / Node Microservice" class="calc-stack-btn p-3 rounded-xl bg-slate-900 border-2 border-slate-800 text-left transition-all hover:border-slate-700">
+                                    <div class="font-bold text-white text-sm">Node / PHP Backend</div>
+                                    <div class="text-[11px] text-slate-400">Lightweight Services</div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Scope & Team Size Sliders -->
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-2">
+                                    <span class="text-slate-300">Estimated Development Duration (Weeks)</span>
+                                    <span id="calc-weeks-val" class="text-cyan-400 font-mono">4 Weeks</span>
+                                </div>
+                                <input type="range" id="calc-weeks" min="1" max="24" value="4" class="w-full accent-cyan-500 bg-slate-900 h-2 rounded-lg cursor-pointer">
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-2">
+                                    <span class="text-slate-300">Engineers in Team</span>
+                                    <span id="calc-team-val" class="text-cyan-400 font-mono">3 Developers</span>
+                                </div>
+                                <input type="range" id="calc-team" min="1" max="10" value="3" class="w-full accent-cyan-500 bg-slate-900 h-2 rounded-lg cursor-pointer">
+                            </div>
+                        </div>
+
+                        <!-- Add-ons Checkboxes -->
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Infrastructure & DevOps Add-ons</label>
+                            <div class="grid grid-cols-2 gap-3 text-xs">
+                                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-900 border border-slate-800 cursor-pointer">
+                                    <input type="checkbox" id="calc-aws" class="rounded accent-cyan-500" checked>
+                                    <span class="text-slate-300">AWS / VPS Hosting Setup</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-900 border border-slate-800 cursor-pointer">
+                                    <input type="checkbox" id="calc-cicd" class="rounded accent-cyan-500" checked>
+                                    <span class="text-slate-300">CI/CD Pipeline Setup</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Budget Summary Output Card -->
+                    <div class="lg:col-span-5 bg-slate-900 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="text-xs font-mono font-bold text-cyan-400 uppercase tracking-wider mb-1">Estimated Summary</div>
+                            <h4 class="text-lg font-bold text-white mb-4">Project Scope Breakdown</h4>
+
+                            <div class="space-y-3 border-b border-slate-800 pb-4 text-xs">
+                                <div class="flex justify-between text-slate-400">
+                                    <span>Selected Architecture:</span>
+                                    <span id="summary-stack" class="text-slate-200 font-medium">.NET Core & Microservices</span>
+                                </div>
+                                <div class="flex justify-between text-slate-400">
+                                    <span>Total Sprint Hours:</span>
+                                    <span id="summary-hours" class="text-slate-200 font-mono font-bold">480 Hours</span>
+                                </div>
+                                <div class="flex justify-between text-slate-400">
+                                    <span>Infrastructure Overhead:</span>
+                                    <span id="summary-infra" class="text-slate-200 font-mono">$1,200</span>
+                                </div>
+                            </div>
+
+                            <div class="pt-4">
+                                <div class="text-xs text-slate-400 font-medium">Estimated Project Budget:</div>
+                                <div class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mt-1 font-mono" id="summary-total-budget">
+                                    $22,800
+                                </div>
+                                <p class="text-[11px] text-slate-500 mt-2 leading-relaxed">
+                                    *Estimation based on industry standard engineering sprint velocity. Contact directly for formal project quotations & resource allocation.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <a href="mailto:arih.suaeban@gmail.com?subject=Project%20Budget%20Inquiry" class="block w-full text-center py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm shadow-md transition-all">
+                                Request Formal Estimate
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE & EDUCATION TIMELINE SECTION -->
+        <section id="experience" class="py-20 bg-slate-950/60 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="max-w-3xl mb-16">
+                    <h2 class="text-xs font-mono font-bold tracking-widest text-cyan-400 uppercase mb-2">Career Trajectory</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Experience & Certifications</h3>
+                </div>
+
+                <div class="relative border-l-2 border-slate-800 ml-4 sm:ml-8 space-y-12">
+                    
+                    <!-- Timeline Item 1 -->
+                    <div class="relative pl-8 sm:pl-10">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-cyan-500 ring-4 ring-slate-900"></div>
+                        <div class="flex flex-wrap items-center gap-2 mb-1">
+                            <span class="text-xs font-mono px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-400 font-semibold">2021 - Present</span>
+                            <span class="text-xs text-slate-400">Full-Time / Consulting</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">Senior Software Engineer & Team Lead</h4>
+                        <p class="text-sm font-semibold text-slate-400 mb-3">Enterprise IT Consulting & Software Solutions</p>
+                        <p class="text-sm text-slate-300 leading-relaxed max-w-3xl">
+                            Leading end-to-end SDLC for major enterprise and government/BUMN portal developments (Pertamina, low-carbon initiatives). Managing technical sprint budgeting, stakeholder requirement engineering, .NET Core microservices architecture, and OutSystems platform integrations.
+                        </p>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="relative pl-8 sm:pl-10">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-slate-900"></div>
+                        <div class="flex flex-wrap items-center gap-2 mb-1">
+                            <span class="text-xs font-mono px-2.5 py-0.5 rounded bg-blue-500/10 text-blue-400 font-semibold">2022</span>
+                            <span class="text-xs text-slate-400">OutSystems Credential</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">OutSystems Associate Developer Certification (O11)</h4>
+                        <p class="text-sm font-semibold text-slate-400 mb-2">OutSystems Low-Code Platform</p>
+                        <p class="text-sm text-slate-300 leading-relaxed max-w-3xl">
+                            Officially certified in OutSystems 11 platform architecture, server actions, REST API integration, and client-side reactive web applications.
+                        </p>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="relative pl-8 sm:pl-10">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-slate-900"></div>
+                        <div class="flex flex-wrap items-center gap-2 mb-1">
+                            <span class="text-xs font-mono px-2.5 py-0.5 rounded bg-slate-800 text-slate-300 font-semibold">2009 - 2020</span>
+                            <span class="text-xs text-slate-400">Full-Stack Development</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">Software Engineer & Technical Specialist</h4>
+                        <p class="text-sm font-semibold text-slate-400 mb-3">Various IT Solution Providers & Enterprise Projects</p>
+                        <p class="text-sm text-slate-300 leading-relaxed max-w-3xl">
+                            Engineered high-load relational databases (SQL Server, PostgreSQL, MySQL), financial payment gateway integrations (Mandiri QRIS/Livin'), web applications in ASP.NET, PHP, and modern JavaScript frameworks.
+                        </p>
+                    </div>
+
+                    <!-- Timeline Item 4 (Education) -->
+                    <div class="relative pl-8 sm:pl-10">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-teal-500 ring-4 ring-slate-900"></div>
+                        <div class="flex flex-wrap items-center gap-2 mb-1">
+                            <span class="text-xs font-mono px-2.5 py-0.5 rounded bg-teal-500/10 text-teal-400 font-semibold">Academic</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">Bachelor’s Degree in Computer Science (S1)</h4>
+                        <p class="text-sm font-semibold text-slate-400">UIN Syarif Hidayatullah Jakarta</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & DIRECT OUTREACH SECTION -->
+        <section id="contact" class="py-20 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-slate-800 max-w-4xl mx-auto text-center space-y-6">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Let's Discuss Your Next Strategic Initiative</h2>
+                    <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
+                        Whether you are looking for a Senior Software Engineer, Team Lead, or OutSystems Consultant for full-time remote or contract positions, I am open to discussing global opportunities.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+                        <a href="mailto:arih.suaeban@gmail.com" class="px-6 py-3.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm shadow-lg shadow-cyan-500/20 transition-all flex items-center gap-2">
+                            <i class="fa-regular fa-envelope"></i> Send Email
+                        </a>
+                        <a href="https://wa.me/6285691088022" target="_blank" class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg shadow-emerald-600/20 transition-all flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp"></i> Direct WhatsApp
+                        </a>
+                        <button onclick="copyContactInfo('arih.suaeban@gmail.com')" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-sm transition-all flex items-center gap-2">
+                            <i class="fa-regular fa-copy"></i> Copy Email Address
+                        </button>
+                    </div>
+
+                    <div class="pt-6 text-xs text-slate-400 font-mono">
+                        Direct Phone: (+62) 856-910-880-22 &bull; Email: arih.suaeban@gmail.com
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PROJECT DETAIL MODAL DIALOG -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 relative shadow-2xl">
+            <button id="close-modal-btn" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div id="modal-content">
+                <!-- Modal content dynamically injected -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Banner -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 hidden bg-cyan-500 text-slate-950 px-4 py-3 rounded-xl font-bold text-xs shadow-xl flex items-center gap-2">
+        <i class="fa-solid fa-check-circle"></i> <span id="toast-msg">Copied to clipboard!</span>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 py-8 border-t border-slate-900 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 Arih Juha Suaeban. Senior Software Engineer & Team Lead.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // PROJECT DATABASE
+        const projectsData = [
+            {
+                id: 'pertamina-solids',
+                title: 'Enterprise Workflow & Document Management System',
+                category: 'dotnet',
+                client: 'Pertamina Solids & Enterprise Clients',
+                techStack: ['.NET Core', 'C#', 'SQL Server', 'REST API', 'SOLID Principles'],
+                summary: 'High-load document workflow and automated invoice approval platform built for enterprise scale.',
+                overview: 'Designed and deployed an enterprise-grade workflow system to automate multi-tier document approvals, vendor invoice processing, and audit trail tracking for high-volume transactions.',
+                roleImpact: 'Architected backend services using .NET Core and SQL Server. Reduced invoice approval processing time by 60% while maintaining strict compliance.',
+                architecture: 'Microservice-oriented REST APIs, asynchronous queue processing, and relational database indexing for optimal search performance.'
+            },
+            {
+                id: 'outsystems-ffp-loco',
+                title: 'Low-Code OutSystems Applications (FFP & LOCO)',
+                category: 'outsystems',
+                client: 'Enterprise Financial & Operational Services',
+                techStack: ['OutSystems O11', '.NET Core Integration', 'REST APIs', 'SQL Server'],
+                summary: 'Rapid enterprise low-code development utilizing OutSystems O11 coupled with custom C# backend web services.',
+                overview: 'Full-cycle implementation of FFP and LOCO low-code web applications to digitalize internal enterprise business operations.',
+                roleImpact: 'Served as Certified OutSystems Developer (O11). Integrated legacy .NET Core services with OutSystems Reactive Web UI, accelerating product launch time.',
+                architecture: 'Low-code frontend UI layers connecting securely to enterprise databases via RESTful API wrappers.'
+            },
+            {
+                id: 'low-carbon-portal',
+                title: 'Low Carbon Education Portal (lowcarboneducation.id)',
+                category: 'cloud',
+                client: 'Environmental Education Initiative',
+                techStack: ['Cloud Hosting', 'Plesk Admin', 'VPS SSD', 'SSL & DNS Mgmt', 'PHP/JS'],
+                summary: 'Cloud-hosted educational portal with full VPS infrastructure setup, domain, and SSL management.',
+                overview: 'End-to-end development and infrastructure hosting setup for a national low-carbon awareness and educational platform.',
+                roleImpact: 'Managed total system deployment, domain acquisition, SSL configuration, and VPS SSD performance tuning for zero downtime.',
+                architecture: 'Cloud VPS SSD hosting managed through Plesk administration with optimized web server caching.'
+            },
+            {
+                id: 'ascope-logistics',
+                title: 'ASCOPE Logistics & Business Portals',
+                category: 'leadership',
+                client: 'Pertamina ASCOPE',
+                techStack: ['Figma Prototyping', '.NET API', 'Proposal Quotation', 'Team Lead'],
+                summary: 'Figma interactive prototyping, project budgeting proposals, and API backend integration.',
+                overview: 'Created end-to-end technical proposals, interactive Figma UI prototypes, and backend API integration plans for ASCOPE international energy logistics portal.',
+                roleImpact: 'Led stakeholder discussions, estimated project resource budgets, and directed development sprint timelines.',
+                architecture: 'User-centric prototyping coupled with modular backend service architecture.'
+            },
+            {
+                id: 'nra-digital',
+                title: 'NRA Digital Solusindo Enterprise Solutions',
+                category: 'leadership',
+                client: 'NRA Group',
+                techStack: ['Kopra Web Services', 'Project Quotation', 'Email/Server Hosting', 'C#'],
+                summary: 'Enterprise project quotation, Kopra web services integration, and corporate hosting infrastructure.',
+                overview: 'Consulted and engineered corporate digital solutions including banking integration (Kopra) and enterprise mail server hosting.',
+                roleImpact: 'Prepared technical budget proposals, architected server security protocols, and managed client relations.',
+                architecture: 'Secure enterprise host environment with encrypted banking web service endpoints.'
+            },
+            {
+                id: 'multitenant-fintech',
+                title: 'Multi-Tenant Banking & Financial QRIS Integration',
+                category: 'dotnet',
+                client: 'FinTech / Retail Banking Systems',
+                techStack: ['C#', 'Mandiri Livin API', 'QRIS Payment Gateway', 'PostgreSQL'],
+                summary: 'Multi-tenant payment system with seamless Livin Mandiri and QRIS payment gateway integrations.',
+                overview: 'Engineered high-throughput microservices for real-time payment validation, digital wallet transactions, and automated merchant reconciliation.',
+                roleImpact: 'Designed bulletproof transaction API endpoints with idempotent transaction safeguards.',
+                architecture: 'Event-driven payment microservices with PostgreSQL ACID compliance.'
+            }
+        ];
+
+        // RENDER PROJECTS TO GRID
+        function renderProjects(filter = 'all', searchQuery = '') {
+            const grid = document.getElementById('projects-grid');
+            const noProjectsAlert = document.getElementById('no-projects-found');
+            grid.innerHTML = '';
+
+            const filtered = projectsData.filter(project => {
+                const matchesFilter = filter === 'all' || project.category === filter;
+                const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                                      project.summary.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                                      project.techStack.some(t => t.toLowerCase().includes(searchQuery.toLowerCase()));
+                return matchesFilter && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                noProjectsAlert.classList.remove('hidden');
+                return;
+            } else {
+                noProjectsAlert.classList.add('hidden');
+            }
+
+            filtered.forEach(project => {
+                const card = document.createElement('div');
+                card.className = 'glass-panel p-6 rounded-2xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 flex flex-col justify-between group cursor-pointer';
+                card.onclick = () => openProjectModal(project.id);
+
+                const techBadges = project.techStack.slice(0, 3).map(t => 
+                    `<span class="px-2 py-1 rounded bg-slate-800 text-[11px] font-mono text-cyan-300">${t}</span>`
+                ).join('');
+
+                card.innerHTML = `
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-3 font-mono">
+                            <span><i class="fa-regular fa-building text-cyan-500 mr-1"></i>${project.client}</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors mb-2 line-clamp-2">${project.title}</h4>
+                        <p class="text-xs text-slate-300 mb-4 line-clamp-3 leading-relaxed">${project.summary}</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            ${techBadges}
+                        </div>
+                        <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs font-bold text-cyan-400 group-hover:translate-x-1 transition-transform">
+                            <span>View Case Study</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // OPEN PROJECT MODAL
+        function openProjectModal(projectId) {
+            const project = projectsData.find(p => p.id === projectId);
+            if (!project) return;
+
+            const modalContent = document.getElementById('modal-content');
+            const techTags = project.techStack.map(t => `<span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-xs font-mono text-cyan-300">${t}</span>`).join('');
+
+            modalContent.innerHTML = `
+                <div class="text-xs font-mono text-cyan-400 font-bold uppercase mb-1">${project.client}</div>
+                <h3 class="text-2xl font-extrabold text-white mb-4">${project.title}</h3>
+                
+                <div class="flex flex-wrap gap-2 mb-6">
+                    ${techTags}
+                </div>
+
+                <div class="space-y-4 text-sm text-slate-300 border-t border-slate-800 pt-4">
+                    <div>
+                        <h5 class="font-bold text-white mb-1"><i class="fa-solid fa-circle-info text-cyan-400 mr-2"></i>Overview & Scope</h5>
+                        <p class="text-xs leading-relaxed text-slate-300">${project.overview}</p>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-white mb-1"><i class="fa-solid fa-user-check text-teal-400 mr-2"></i>Role & Impact</h5>
+                        <p class="text-xs leading-relaxed text-slate-300">${project.roleImpact}</p>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-white mb-1"><i class="fa-solid fa-diagram-project text-blue-400 mr-2"></i>System Architecture</h5>
+                        <p class="text-xs leading-relaxed text-slate-300">${project.architecture}</p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-800 flex justify-end">
+                    <button onclick="closeProjectModal()" class="px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs">
+                        Close Case Study
+                    </button>
+                </div>
+            `;
+
+            document.getElementById('project-modal').classList.remove('hidden');
+        }
+
+        function closeProjectModal() {
+            document.getElementById('project-modal').classList.add('hidden');
+        }
+
+        // INTERACTIVE BUDGET CALCULATOR LOGIC
+        let selectedStackCost = 45; // Default .NET cost multiplier
+        let selectedStackName = '.NET Core & Microservices';
+
+        function updateCalculator() {
+            const weeks = parseInt(document.getElementById('calc-weeks').value);
+            const teamSize = parseInt(document.getElementById('calc-team').value);
+            const awsChecked = document.getElementById('calc-aws').checked;
+            const cicdChecked = document.getElementById('calc-cicd').checked;
+
+            // Display UI updates
+            document.getElementById('calc-weeks-val').innerText = `${weeks} Weeks`;
+            document.getElementById('calc-team-val').innerText = `${teamSize} Developers`;
+
+            // Calculate total sprint hours: Weeks * 40 hrs/week * team size
+            const totalHours = weeks * 40 * teamSize;
+            
+            let infraCost = 0;
+            if (awsChecked) infraCost += 800;
+            if (cicdChecked) infraCost += 400;
+
+            const totalBudget = (totalHours * selectedStackCost) + infraCost;
+
+            // Render to summary card
+            document.getElementById('summary-stack').innerText = selectedStackName;
+            document.getElementById('summary-hours').innerText = `${totalHours.toLocaleString()} Hours`;
+            document.getElementById('summary-infra').innerText = `$${infraCost.toLocaleString()}`;
+            document.getElementById('summary-total-budget').innerText = `$${totalBudget.toLocaleString()}`;
+        }
+
+        // COPY TO CLIPBOARD HELPER
+        function copyContactInfo(text) {
+            const dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-msg').innerText = `Copied "${text}" to clipboard!`;
+            toast.classList.remove('hidden');
+            setTimeout(() => toast.classList.add('hidden'), 3000);
+        }
+
+        // INITIALIZE EVENT LISTENERS ON PAGE LOAD
+        window.addEventListener('DOMContentLoaded', () => {
+            renderProjects();
+
+            // Filter button listeners
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active', 'bg-cyan-500', 'text-slate-950');
+                        b.classList.add('bg-slate-800', 'text-slate-300');
+                    });
+                    btn.classList.add('active', 'bg-cyan-500', 'text-slate-950');
+                    btn.classList.remove('bg-slate-800', 'text-slate-300');
+
+                    const filter = btn.getAttribute('data-filter');
+                    const searchQuery = document.getElementById('project-search').value;
+                    renderProjects(filter, searchQuery);
+                });
+            });
+
+            // Search input listener
+            document.getElementById('project-search').addEventListener('input', (e) => {
+                const activeFilterBtn = document.querySelector('.filter-btn.active');
+                const filter = activeFilterBtn ? activeFilterBtn.getAttribute('data-filter') : 'all';
+                renderProjects(filter, e.target.value);
+            });
+
+            // Modal listeners
+            document.getElementById('close-modal-btn').addEventListener('click', closeProjectModal);
+            document.getElementById('project-modal').addEventListener('click', (e) => {
+                if (e.target.id === 'project-modal') closeProjectModal();
+            });
+
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+            });
+
+            // Budget Calculator stack button selections
+            const stackBtns = document.querySelectorAll('.calc-stack-btn');
+            stackBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    stackBtns.forEach(b => {
+                        b.classList.remove('active', 'bg-cyan-500/20', 'border-cyan-500');
+                        b.classList.add('bg-slate-900', 'border-slate-800');
+                    });
+                    btn.classList.add('active', 'bg-cyan-500/20', 'border-cyan-500');
+                    btn.classList.remove('bg-slate-900', 'border-slate-800');
+
+                    selectedStackCost = parseInt(btn.getAttribute('data-stack-cost'));
+                    selectedStackName = btn.getAttribute('data-stack-name');
+                    updateCalculator();
+                });
+            });
+
+            // Budget Calculator sliders & inputs listeners
+            document.getElementById('calc-weeks').addEventListener('input', updateCalculator);
+            document.getElementById('calc-team').addEventListener('input', updateCalculator);
+            document.getElementById('calc-aws').addEventListener('change', updateCalculator);
+            document.getElementById('calc-cicd').addEventListener('change', updateCalculator);
+
+            updateCalculator();
+        });
+    </script>
+</body>
+</html>
